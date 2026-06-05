@@ -31,32 +31,21 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min
 .btn-primary{background:var(--blue-bg);color:var(--blue-text);border-color:#bfdbfe}
 .btn-primary:hover{background:#dbeafe}
 .btn-sm{font-size:12px;padding:5px 10px}
-.btn-warn{background:var(--amber-bg);color:var(--amber-text);border-color:#fde68a}
-
-/* Search/filter bar */
 .filter-bar{display:flex;gap:10px;align-items:center;margin-bottom:1.5rem;flex-wrap:wrap}
 .search-wrap{position:relative;flex:1;min-width:180px}
 .search-wrap i{position:absolute;left:10px;top:50%;transform:translateY(-50%);color:var(--text3);font-size:15px;pointer-events:none}
 .search-wrap input{width:100%;padding:8px 12px 8px 34px;border-radius:var(--radius);border:1px solid var(--border2);background:var(--surface);color:var(--text);font-family:'DM Sans',sans-serif;font-size:13px;outline:none}
 .search-wrap input:focus{border-color:var(--blue)}
 .filter-select{font-family:'DM Sans',sans-serif;font-size:13px;padding:8px 12px;border-radius:var(--radius);border:1px solid var(--border2);background:var(--surface);color:var(--text);cursor:pointer;outline:none}
-
-/* Metrics */
-.metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px;margin-bottom:2rem}
+.metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px;margin-bottom:1.5rem}
 .metric{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:12px 14px}
 .metric-label{font-size:11px;color:var(--text2);margin-bottom:5px}
 .metric-value{font-size:24px;font-weight:500;line-height:1}
 .metric-sub{font-size:11px;color:var(--text3);margin-top:4px}
-
-/* Alerts */
 .alert-bar{background:#fffbeb;border:1px solid #fde68a;border-radius:var(--radius);padding:10px 14px;margin-bottom:1.5rem;font-size:13px;color:var(--amber-text);display:none}
 .alert-bar.vis{display:flex;align-items:flex-start;gap:8px;flex-wrap:wrap}
 .alert-item{display:inline-flex;align-items:center;gap:5px;background:#fff;border:1px solid #fde68a;border-radius:20px;padding:3px 10px;font-size:12px;cursor:pointer}
-.alert-item:hover{background:#fef9c3}
-
 .sec-title{font-size:12px;font-weight:500;color:var(--text2);text-transform:uppercase;letter-spacing:.06em;margin-bottom:12px}
-
-/* People grid */
 .people-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:12px;margin-bottom:2rem}
 .pcard{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:1.1rem 1.25rem;cursor:pointer;transition:border-color .15s}
 .pcard:hover{border-color:var(--border2)}
@@ -77,23 +66,17 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min
 .pfoot{display:flex;align-items:center;justify-content:space-between;margin-top:12px;padding-top:10px;border-top:1px solid var(--border)}
 .next1{font-size:11px;color:var(--text2)}
 .tbadge{font-size:11px;padding:3px 9px;border-radius:20px}
-
-/* Detail panel */
 .detail{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:1.5rem;margin-bottom:2rem;display:none}
 .detail.vis{display:block}
 .dtop{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:1.25rem;flex-wrap:wrap;gap:10px}
 .dname{font-size:18px;font-weight:500}
 .drole{font-size:13px;color:var(--text2);margin-top:3px}
-
-/* Tabs */
 .tabs{display:flex;gap:0;flex-wrap:wrap;border-bottom:1px solid var(--border);margin-bottom:0}
 .tab{font-family:'DM Sans',sans-serif;font-size:12px;padding:8px 11px;border:none;background:transparent;color:var(--text2);cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px;transition:color .15s,border-color .15s;white-space:nowrap}
 .tab:hover{color:var(--text)}
 .tab.on{color:var(--blue);border-bottom-color:var(--blue);font-weight:500}
 .tp{display:none;padding-top:1rem}
 .tp.on{display:block}
-
-/* History */
 .hist-list{display:flex;flex-direction:column;gap:10px}
 .hist-item{display:flex;gap:10px;align-items:flex-start;padding:10px;border-radius:var(--radius);background:var(--bg)}
 .hdot{width:8px;height:8px;border-radius:50%;margin-top:5px;flex-shrink:0}
@@ -102,8 +85,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min
 .htag{font-size:10px;padding:2px 7px;border-radius:20px;margin-left:6px;vertical-align:middle}
 .hscore{font-size:11px;font-weight:500;margin-left:5px;vertical-align:middle;font-family:'DM Mono',monospace}
 .hist-empty{font-size:13px;color:var(--text3);padding:1rem 0}
-
-/* Form */
 .form-panel{background:var(--bg);border:1px solid var(--border);border-radius:var(--radius-lg);padding:1.25rem;margin-bottom:1.5rem;display:none}
 .form-panel.vis{display:block}
 .form-title{font-size:14px;font-weight:500;margin-bottom:1rem}
@@ -113,8 +94,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min
 .form-field input:focus,.form-field select:focus,.form-field textarea:focus{border-color:var(--blue)}
 .form-field textarea{resize:vertical;min-height:70px}
 .form-field-full{grid-column:1/-1}
-
-/* Comp detail */
 .comp-detail{display:flex;flex-direction:column;gap:10px;margin-bottom:1.5rem}
 .comp-edit-row{display:flex;align-items:center;gap:10px}
 .comp-edit-label{font-size:13px;width:130px;flex-shrink:0}
@@ -123,20 +102,13 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min
 .chart-wrap{position:relative;width:100%;height:260px}
 .chart-legend{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--text2);margin-bottom:10px}
 .legend-dot{width:10px;height:10px;border-radius:2px;display:inline-block;margin-right:4px;vertical-align:middle}
-
-/* Bottlenecks */
 .blist{display:flex;flex-direction:column;gap:7px}
 .bitem{display:flex;align-items:flex-start;gap:8px;font-size:13px;color:var(--text2);padding:10px 12px;background:var(--red-bg);border-radius:var(--radius);border:1px solid #fecaca}
-.bitem i.ti-alert-circle{font-size:15px;color:var(--red);flex-shrink:0;margin-top:1px}
-
-/* Comments */
 .comment-card{background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);padding:12px 14px;margin-bottom:8px}
 .comment-meta{display:flex;align-items:center;gap:8px;margin-bottom:6px;flex-wrap:wrap}
 .comment-date{font-size:11px;color:var(--text3);font-family:'DM Mono',monospace}
 .comment-cat{font-size:11px;padding:2px 8px;border-radius:20px}
 .comment-text{font-size:13px;line-height:1.6}
-
-/* Perspectiva */
 .pq-block{background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);margin-bottom:10px;overflow:hidden}
 .pq-header{display:flex;align-items:center;justify-content:space-between;padding:10px 14px;cursor:pointer;gap:8px}
 .pq-question{font-size:13px;font-weight:500;flex:1}
@@ -151,16 +123,12 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min
 .pq-answer-date{font-size:11px;color:var(--text3);font-family:'DM Mono',monospace}
 .pq-answer-text{font-size:13px;line-height:1.6}
 .pq-answer-form{padding:10px 14px;background:var(--surface2);border-top:1px solid var(--border)}
-
-/* Atividades */
 .act-item{display:flex;align-items:flex-start;gap:10px;padding:10px 12px;background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);margin-bottom:8px}
 .act-icon{width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:14px}
 .act-body{flex:1;min-width:0}
 .act-title{font-size:13px;font-weight:500}
 .act-meta{font-size:11px;color:var(--text3);margin-top:2px}
 .act-status{font-size:11px;padding:2px 8px;border-radius:20px;margin-left:6px;vertical-align:middle}
-
-/* PDI */
 .pdi-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:14px 16px;margin-bottom:12px}
 .pdi-header{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:8px;gap:8px}
 .pdi-title{font-size:14px;font-weight:500}
@@ -168,7 +136,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min
 .pdi-desc{font-size:13px;color:var(--text2);margin-bottom:12px;line-height:1.6}
 .pdi-milestones{display:flex;flex-direction:column;gap:7px}
 .pdi-ms{display:flex;align-items:center;gap:8px;font-size:12px}
-.pdi-ms-check{width:18px;height:18px;border-radius:50%;border:1.5px solid var(--border2);display:flex;align-items:center;justify-content:center;cursor:pointer;flex-shrink:0;transition:background .15s,border-color .15s}
+.pdi-ms-check{width:18px;height:18px;border-radius:50%;border:1.5px solid var(--border2);display:flex;align-items:center;justify-content:center;cursor:pointer;flex-shrink:0;transition:background .15s}
 .pdi-ms-check.done{background:var(--green);border-color:var(--green)}
 .pdi-ms-check.done i{color:#fff;font-size:11px}
 .pdi-ms-label{flex:1}
@@ -176,8 +144,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min
 .pdi-ms-date{color:var(--text3);font-size:11px;font-family:'DM Mono',monospace;white-space:nowrap}
 .pdi-progress{height:4px;background:var(--surface2);border-radius:4px;margin-top:10px;overflow:hidden}
 .pdi-progress-bar{height:100%;border-radius:4px;background:var(--green);transition:width .3s}
-
-/* Feedback 360 */
 .fb-card{background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);padding:12px 14px;margin-bottom:8px}
 .fb-meta{display:flex;align-items:center;gap:8px;margin-bottom:6px;flex-wrap:wrap}
 .fb-from{font-size:12px;font-weight:500}
@@ -185,8 +151,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min
 .fb-date{font-size:11px;color:var(--text3);font-family:'DM Mono',monospace}
 .fb-text{font-size:13px;line-height:1.6}
 .fb-stars{font-size:12px;color:#f59e0b;margin-left:auto}
-
-/* Histórico de cargo */
 .cargo-timeline{display:flex;flex-direction:column;gap:0}
 .cargo-item{display:flex;gap:14px;align-items:flex-start;padding-bottom:16px;position:relative}
 .cargo-item:not(:last-child)::before{content:'';position:absolute;left:11px;top:24px;bottom:0;width:1px;background:var(--border2)}
@@ -196,33 +160,34 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min
 .cargo-title{font-size:13px;font-weight:500}
 .cargo-date{font-size:11px;color:var(--text3);font-family:'DM Mono',monospace;margin-top:2px}
 .cargo-note{font-size:12px;color:var(--text2);margin-top:3px}
-
-/* Compare modal */
-.compare-section{margin-top:1rem}
-.compare-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1rem}
-@media(max-width:480px){.compare-grid{grid-template-columns:1fr}}
-
-/* Dividers / inline forms */
-.divider{border-top:1px solid var(--border);margin:1rem 0}
-.inline-form{display:flex;gap:8px;align-items:flex-start;flex-wrap:wrap;margin-top:8px}
-.inline-form input,.inline-form select,.inline-form textarea{font-family:'DM Sans',sans-serif;font-size:13px;padding:7px 10px;border-radius:var(--radius);border:1px solid var(--border2);background:var(--surface);color:var(--text);outline:none}
-.inline-form input:focus,.inline-form select:focus,.inline-form textarea:focus{border-color:var(--blue)}
-
-/* Modal */
 .modal-backdrop{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.35);z-index:100;align-items:flex-start;justify-content:center;padding-top:5vh;overflow-y:auto}
 .modal-backdrop.vis{display:flex}
 .modal{background:var(--surface);border-radius:var(--radius-lg);padding:1.5rem;width:540px;max-width:96vw;margin-bottom:2rem}
 .modal-title{font-size:16px;font-weight:500;margin-bottom:1.25rem}
 .modal-footer{display:flex;gap:8px;justify-content:flex-end;margin-top:1.25rem}
+.divider{border-top:1px solid var(--border);margin:1rem 0}
+.inline-form{display:flex;gap:8px;align-items:flex-start;flex-wrap:wrap;margin-top:8px}
+.inline-form input,.inline-form select{font-family:'DM Sans',sans-serif;font-size:13px;padding:7px 10px;border-radius:var(--radius);border:1px solid var(--border2);background:var(--surface);color:var(--text);outline:none}
+/* Loading overlay */
+.loading{position:fixed;inset:0;background:rgba(247,246,243,0.85);z-index:200;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px}
+.loading.hidden{display:none}
+.spinner{width:32px;height:32px;border:3px solid var(--border2);border-top-color:var(--blue);border-radius:50%;animation:spin .7s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.loading-text{font-size:14px;color:var(--text2)}
 .toast{position:fixed;bottom:24px;right:24px;background:var(--text);color:#fff;font-size:13px;padding:10px 18px;border-radius:var(--radius);opacity:0;transition:opacity .25s;pointer-events:none;z-index:999}
 .toast.show{opacity:1}
+.toast.error{background:#b91c1c}
 @media(max-width:600px){.page{padding:1rem}.topbar{flex-direction:column;align-items:flex-start}.tab{font-size:11px;padding:6px 8px}}
 </style>
 </head>
 <body>
-<div class="page">
 
-  <!-- Top bar -->
+<div class="loading" id="loading">
+  <div class="spinner"></div>
+  <div class="loading-text">Carregando dados...</div>
+</div>
+
+<div class="page">
   <div class="topbar">
     <div class="topbar-left">
       <h1>Evolução dos liderados</h1>
@@ -236,31 +201,23 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min
     </div>
   </div>
 
-  <!-- Metrics -->
   <div class="metrics">
-    <div class="metric"><div class="metric-label">Liderados</div><div class="metric-value" id="m-total">0</div><div class="metric-sub">ativos</div></div>
+    <div class="metric"><div class="metric-label">Liderados</div><div class="metric-value" id="m-total">—</div><div class="metric-sub">ativos</div></div>
     <div class="metric"><div class="metric-label">Média geral</div><div class="metric-value" id="m-avg">—</div><div class="metric-sub">última nota</div></div>
-    <div class="metric"><div class="metric-label">1:1s registradas</div><div class="metric-value" id="m-sessions">0</div><div class="metric-sub">total</div></div>
-    <div class="metric"><div class="metric-label">Em evolução</div><div class="metric-value" id="m-growing">0</div><div class="metric-sub">de <span id="m-total2">0</span></div></div>
-    <div class="metric"><div class="metric-label">PDIs ativos</div><div class="metric-value" id="m-pdis">0</div><div class="metric-sub">em andamento</div></div>
-    <div class="metric"><div class="metric-label">Overdue 1:1</div><div class="metric-value" id="m-overdue">0</div><div class="metric-sub">sem reunião &gt;30d</div></div>
+    <div class="metric"><div class="metric-label">1:1s registradas</div><div class="metric-value" id="m-sessions">—</div><div class="metric-sub">total</div></div>
+    <div class="metric"><div class="metric-label">Em evolução</div><div class="metric-value" id="m-growing">—</div><div class="metric-sub">de <span id="m-total2">—</span></div></div>
+    <div class="metric"><div class="metric-label">PDIs ativos</div><div class="metric-value" id="m-pdis">—</div><div class="metric-sub">em andamento</div></div>
+    <div class="metric"><div class="metric-label">Overdue 1:1</div><div class="metric-value" id="m-overdue">—</div><div class="metric-sub">&gt;30 dias</div></div>
   </div>
 
-  <!-- Alert bar: overdue 1:1 -->
   <div class="alert-bar" id="alert-bar">
     <i class="ti ti-clock" style="font-size:16px;flex-shrink:0;margin-top:1px"></i>
     <div><strong style="margin-right:6px">Sem 1:1 há mais de 30 dias:</strong><span id="alert-names"></span></div>
   </div>
 
-  <!-- Filter bar -->
   <div class="filter-bar">
-    <div class="search-wrap">
-      <i class="ti ti-search"></i>
-      <input type="text" id="search-input" placeholder="Buscar por nome ou área..." oninput="renderCards()"/>
-    </div>
-    <select class="filter-select" id="filter-area" onchange="renderCards()">
-      <option value="">Todas as áreas</option>
-    </select>
+    <div class="search-wrap"><i class="ti ti-search"></i><input type="text" id="search-input" placeholder="Buscar por nome ou área..." oninput="renderCards()"/></div>
+    <select class="filter-select" id="filter-area" onchange="renderCards()"><option value="">Todas as áreas</option></select>
     <select class="filter-select" id="filter-trend" onchange="renderCards()">
       <option value="">Todos os trends</option>
       <option value="up">Em evolução ↑</option>
@@ -269,19 +226,14 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min
     </select>
   </div>
 
-  <!-- New 1:1 form -->
   <div class="form-panel" id="form-1on1">
     <div class="form-title">Registrar nova 1:1</div>
     <div class="form-grid">
       <div class="form-field"><label>Liderado</label><select id="f-person"></select></div>
       <div class="form-field"><label>Data</label><input type="date" id="f-date"/></div>
-      <div class="form-field"><label>Nota geral (1–10)</label><input type="number" id="f-score" min="1" max="10" step="0.5" value="7"/></div>
+      <div class="form-field"><label>Nota (1–10)</label><input type="number" id="f-score" min="1" max="10" step="0.5" value="7"/></div>
       <div class="form-field"><label>Categoria</label>
-        <select id="f-tag">
-          <option value="geral">geral</option><option value="entrega">entrega</option><option value="gargalo">gargalo</option>
-          <option value="desenvolvimento">desenvolvimento</option><option value="feedback">feedback</option>
-          <option value="liderança">liderança</option><option value="autonomia">autonomia</option><option value="inovação">inovação</option>
-        </select>
+        <select id="f-tag"><option value="geral">geral</option><option value="entrega">entrega</option><option value="gargalo">gargalo</option><option value="desenvolvimento">desenvolvimento</option><option value="feedback">feedback</option><option value="liderança">liderança</option><option value="autonomia">autonomia</option><option value="inovação">inovação</option></select>
       </div>
       <div class="form-field form-field-full"><label>Anotações</label><textarea id="f-notes" placeholder="O que foi discutido, pontos de atenção, próximos passos..."></textarea></div>
     </div>
@@ -291,10 +243,9 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min
     </div>
   </div>
 
-  <div class="sec-title" style="margin-bottom:12px">Liderados</div>
+  <div class="sec-title">Liderados</div>
   <div class="people-grid" id="people-grid"></div>
 
-  <!-- Detail panel -->
   <div class="detail" id="detail-panel">
     <div class="dtop">
       <div><div class="dname" id="dp-name"></div><div class="drole" id="dp-role"></div></div>
@@ -318,92 +269,66 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min
     </div>
 
     <div id="t-hist" class="tp on"><div class="hist-list" id="dp-history"></div></div>
-
-    <div id="t-evo" class="tp">
-      <div class="chart-legend" id="evo-legend"></div>
-      <div class="chart-wrap"><canvas id="evo-chart" role="img" aria-label="Evolução de nota nas 1:1s"></canvas></div>
-    </div>
-
-    <div id="t-comp" class="tp">
-      <div class="comp-detail" id="dp-comp-detail"></div>
-      <div class="chart-wrap"><canvas id="radar-chart" role="img" aria-label="Radar de competências"></canvas></div>
-    </div>
-
+    <div id="t-evo" class="tp"><div class="chart-legend" id="evo-legend"></div><div class="chart-wrap"><canvas id="evo-chart"></canvas></div></div>
+    <div id="t-comp" class="tp"><div class="comp-detail" id="dp-comp-detail"></div><div class="chart-wrap"><canvas id="radar-chart"></canvas></div></div>
     <div id="t-bottlenecks" class="tp">
       <div class="blist" id="dp-bottlenecks"></div>
       <div class="divider"></div>
       <div style="font-size:12px;color:var(--text2);margin-bottom:6px">Adicionar gargalo</div>
-      <div class="inline-form">
-        <input type="text" id="new-bottleneck" placeholder="Descreva o gargalo..." style="flex:1;min-width:200px"/>
-        <button class="btn btn-primary btn-sm" onclick="addBottleneck()"><i class="ti ti-plus"></i> Adicionar</button>
-      </div>
+      <div class="inline-form"><input type="text" id="new-bottleneck" placeholder="Descreva o gargalo..." style="flex:1;min-width:200px"/><button class="btn btn-primary btn-sm" onclick="addBottleneck()"><i class="ti ti-plus"></i> Adicionar</button></div>
     </div>
-
     <div id="t-comments" class="tp">
       <div id="dp-comments"></div>
       <div class="divider"></div>
       <div style="font-size:13px;font-weight:500;margin-bottom:10px">Novo comentário</div>
       <div class="form-grid" style="max-width:600px">
-        <div class="form-field"><label>Categoria</label>
-          <select id="c-cat"><option value="geral">geral</option><option value="comportamento">comportamento</option><option value="brainstorm">brainstorm</option><option value="reconhecimento">reconhecimento</option><option value="observação">observação</option><option value="plano">plano</option></select>
-        </div>
-        <div class="form-field form-field-full"><label>Comentário</label><textarea id="c-text" rows="3" placeholder="Anotação livre, reflexão, brainstorm feito com o liderado..."></textarea></div>
+        <div class="form-field"><label>Categoria</label><select id="c-cat"><option value="geral">geral</option><option value="comportamento">comportamento</option><option value="brainstorm">brainstorm</option><option value="reconhecimento">reconhecimento</option><option value="observação">observação</option><option value="plano">plano</option></select></div>
+        <div class="form-field form-field-full"><label>Comentário</label><textarea id="c-text" rows="3" placeholder="Anotação livre, reflexão, brainstorm..."></textarea></div>
       </div>
-      <button class="btn btn-primary btn-sm" style="margin-top:8px" onclick="addComment()"><i class="ti ti-check"></i> Salvar comentário</button>
+      <button class="btn btn-primary btn-sm" style="margin-top:8px" onclick="addComment()"><i class="ti ti-check"></i> Salvar</button>
     </div>
-
     <div id="t-perspectiva" class="tp">
-      <p style="font-size:13px;color:var(--text2);margin-bottom:1rem;line-height:1.6">Respostas do liderado às perguntas de reflexão da 1:1 inicial. Cada pergunta acumula histórico de respostas.</p>
+      <p style="font-size:13px;color:var(--text2);margin-bottom:1rem;line-height:1.6">Respostas do liderado às perguntas de reflexão. Cada pergunta acumula histórico.</p>
       <div id="dp-perspectiva"></div>
     </div>
-
     <div id="t-atividades" class="tp">
       <div id="dp-atividades"></div>
       <div class="divider"></div>
       <div style="font-size:13px;font-weight:500;margin-bottom:10px">Adicionar atividade</div>
       <div class="form-grid" style="max-width:600px">
         <div class="form-field"><label>Nome</label><input type="text" id="a-title" placeholder="ex: Code review semanal"/></div>
-        <div class="form-field"><label>Tipo</label>
-          <select id="a-type"><option value="responsabilidade">responsabilidade</option><option value="projeto">projeto</option><option value="ritual">ritual de time</option><option value="mentoria">mentoria</option><option value="aprendizado">aprendizado</option><option value="liderança">liderança</option></select>
-        </div>
-        <div class="form-field"><label>Status</label>
-          <select id="a-status"><option value="ativo">ativo</option><option value="pausado">pausado</option><option value="concluído">concluído</option></select>
-        </div>
-        <div class="form-field form-field-full"><label>Descrição (opcional)</label><input type="text" id="a-desc" placeholder="Contexto ou detalhe"/></div>
+        <div class="form-field"><label>Tipo</label><select id="a-type"><option value="responsabilidade">responsabilidade</option><option value="projeto">projeto</option><option value="ritual">ritual de time</option><option value="mentoria">mentoria</option><option value="aprendizado">aprendizado</option><option value="liderança">liderança</option></select></div>
+        <div class="form-field"><label>Status</label><select id="a-status"><option value="ativo">ativo</option><option value="pausado">pausado</option><option value="concluído">concluído</option></select></div>
+        <div class="form-field form-field-full"><label>Descrição</label><input type="text" id="a-desc" placeholder="Contexto ou detalhe"/></div>
       </div>
       <button class="btn btn-primary btn-sm" style="margin-top:4px" onclick="addAtividade()"><i class="ti ti-plus"></i> Adicionar</button>
     </div>
-
     <div id="t-pdi" class="tp">
       <div id="dp-pdi"></div>
       <div class="divider"></div>
-      <div style="font-size:13px;font-weight:500;margin-bottom:10px">Novo plano de desenvolvimento</div>
+      <div style="font-size:13px;font-weight:500;margin-bottom:10px">Novo PDI</div>
       <div class="form-grid" style="max-width:640px">
         <div class="form-field"><label>Título</label><input type="text" id="pdi-title" placeholder="ex: Desenvolver liderança técnica"/></div>
         <div class="form-field"><label>Impacto</label><select id="pdi-impact"><option value="alto">alto</option><option value="médio">médio</option><option value="baixo">baixo</option></select></div>
         <div class="form-field"><label>Prazo</label><input type="date" id="pdi-deadline"/></div>
-        <div class="form-field form-field-full"><label>Descrição</label><textarea id="pdi-desc" rows="2" placeholder="Objetivo, contexto, por que é importante..."></textarea></div>
-        <div class="form-field form-field-full"><label>Milestones (um por linha)</label><textarea id="pdi-ms" rows="3" placeholder="Completar curso X&#10;Conduzir primeira reunião de feedback&#10;Apresentar resultado ao time"></textarea></div>
+        <div class="form-field form-field-full"><label>Descrição</label><textarea id="pdi-desc" rows="2" placeholder="Objetivo, contexto..."></textarea></div>
+        <div class="form-field form-field-full"><label>Milestones (um por linha)</label><textarea id="pdi-ms" rows="3" placeholder="Completar curso X&#10;Conduzir reunião de feedback&#10;Apresentar resultado"></textarea></div>
       </div>
       <button class="btn btn-primary btn-sm" style="margin-top:4px" onclick="addPDI()"><i class="ti ti-plus"></i> Criar PDI</button>
     </div>
-
     <div id="t-feedback360" class="tp">
       <div id="dp-feedback360"></div>
       <div class="divider"></div>
       <div style="font-size:13px;font-weight:500;margin-bottom:10px">Registrar feedback recebido</div>
       <div class="form-grid" style="max-width:620px">
-        <div class="form-field"><label>De quem</label><input type="text" id="fb-from" placeholder="Nome ou papel (ex: cliente, par, gestor)"/></div>
-        <div class="form-field"><label>Tipo</label>
-          <select id="fb-type"><option value="positivo">positivo</option><option value="construtivo">construtivo</option><option value="misto">misto</option></select>
-        </div>
-        <div class="form-field"><label>Nota geral (1–5)</label><input type="number" id="fb-score" min="1" max="5" step="1" value="4"/></div>
+        <div class="form-field"><label>De quem</label><input type="text" id="fb-from" placeholder="Nome ou papel (ex: cliente, par)"/></div>
+        <div class="form-field"><label>Tipo</label><select id="fb-type"><option value="positivo">positivo</option><option value="construtivo">construtivo</option><option value="misto">misto</option></select></div>
+        <div class="form-field"><label>Nota (1–5)</label><input type="number" id="fb-score" min="1" max="5" step="1" value="4"/></div>
         <div class="form-field"><label>Data</label><input type="date" id="fb-date"/></div>
-        <div class="form-field form-field-full"><label>Conteúdo do feedback</label><textarea id="fb-text" rows="3" placeholder="Descreva o feedback recebido..."></textarea></div>
+        <div class="form-field form-field-full"><label>Conteúdo</label><textarea id="fb-text" rows="3" placeholder="Descreva o feedback recebido..."></textarea></div>
       </div>
-      <button class="btn btn-primary btn-sm" style="margin-top:4px" onclick="addFeedback360()"><i class="ti ti-check"></i> Salvar feedback</button>
+      <button class="btn btn-primary btn-sm" style="margin-top:4px" onclick="addFeedback360()"><i class="ti ti-check"></i> Salvar</button>
     </div>
-
     <div id="t-cargo" class="tp">
       <div class="cargo-timeline" id="dp-cargo"></div>
       <div class="divider"></div>
@@ -411,7 +336,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min
       <div class="form-grid" style="max-width:560px">
         <div class="form-field"><label>Cargo / Função</label><input type="text" id="cargo-title" placeholder="ex: Tech Lead Sênior"/></div>
         <div class="form-field"><label>Data de início</label><input type="date" id="cargo-date"/></div>
-        <div class="form-field form-field-full"><label>Observação (opcional)</label><input type="text" id="cargo-note" placeholder="ex: Promoção, mudança de área, reestruturação..."/></div>
+        <div class="form-field form-field-full"><label>Observação</label><input type="text" id="cargo-note" placeholder="ex: Promoção, mudança de área..."/></div>
       </div>
       <button class="btn btn-primary btn-sm" style="margin-top:4px" onclick="addCargo()"><i class="ti ti-plus"></i> Registrar</button>
     </div>
@@ -424,8 +349,8 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min
     <div class="modal-title" id="modal-title">Adicionar liderado</div>
     <div class="form-grid">
       <div class="form-field"><label>Nome</label><input type="text" id="pm-name" placeholder="Nome completo"/></div>
-      <div class="form-field"><label>Cargo / Função</label><input type="text" id="pm-role" placeholder="ex: Desenvolvedor Sênior"/></div>
-      <div class="form-field"><label>Área</label><input type="text" id="pm-area" placeholder="ex: Backend, Frontend, Dados"/></div>
+      <div class="form-field"><label>Cargo</label><input type="text" id="pm-role" placeholder="ex: Desenvolvedor Sênior"/></div>
+      <div class="form-field"><label>Área</label><input type="text" id="pm-area" placeholder="ex: Backend, Frontend"/></div>
       <div class="form-field"><label>Próxima 1:1</label><input type="date" id="pm-next"/></div>
     </div>
     <div style="margin-bottom:1rem">
@@ -447,8 +372,8 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min
       <div class="form-field" style="flex:1;min-width:140px"><label>Liderado A</label><select id="cmp-a" onchange="renderCompare()"></select></div>
       <div class="form-field" style="flex:1;min-width:140px"><label>Liderado B</label><select id="cmp-b" onchange="renderCompare()"></select></div>
     </div>
-    <div class="chart-wrap" style="height:280px"><canvas id="compare-chart" role="img" aria-label="Comparação radar entre dois liderados"></canvas></div>
-    <div id="compare-stats" class="compare-grid" style="margin-top:1rem"></div>
+    <div class="chart-wrap" style="height:280px"><canvas id="compare-chart"></canvas></div>
+    <div id="compare-stats" style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1rem"></div>
     <div class="modal-footer"><button class="btn" onclick="closeCompare()">Fechar</button></div>
   </div>
 </div>
@@ -471,175 +396,110 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 <script>
+const SUPA_URL='https://ghmkthdawafxmixunxhk.supabase.co';
+const SUPA_KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdobWt0aGRhd2FmeG1peHVueGhrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODA2Njc1MDksImV4cCI6MjA5NjI0MzUwOX0.FiaRkGs72349ISfpSz-ysEbHuq0YY_SEFaeHfsxvWyI';
+const H={'Content-Type':'application/json','apikey':SUPA_KEY,'Authorization':'Bearer '+SUPA_KEY};
+
+async function sb(method,table,body,query=''){
+  const url=`${SUPA_URL}/rest/v1/${table}${query}`;
+  const opts={method,headers:{...H}};
+  if(body)opts.body=JSON.stringify(body);
+  if(method==='GET')opts.headers['Accept']='application/json';
+  if(method==='POST')opts.headers['Prefer']='return=representation';
+  if(method==='PATCH')opts.headers['Prefer']='return=representation';
+  const r=await fetch(url,opts);
+  if(!r.ok){const e=await r.text();throw new Error(e);}
+  if(method==='DELETE')return null;
+  const t=await r.text();
+  return t?JSON.parse(t):null;
+}
+const get=(table,q)=>sb('GET',table,null,q);
+const post=(table,body)=>sb('POST',table,body);
+const patch=(table,body,q)=>sb('PATCH',table,body,q);
+const del=(table,q)=>sb('DELETE',table,null,q);
+
 const COMP_NAMES=['Entrega','Comunicação','Autonomia','Colaboração','Inovação'];
 const PALETTE=[
   {bg:'#eff4ff',text:'#1d4ed8',bar:'#3b82f6'},{bg:'#f0fdf4',text:'#15803d',bar:'#22c55e'},
   {bg:'#fffbeb',text:'#92400e',bar:'#f59e0b'},{bg:'#fdf4ff',text:'#7e22ce',bar:'#a855f7'},
   {bg:'#fff1f2',text:'#9f1239',bar:'#f43f5e'},{bg:'#f0fdfa',text:'#115e59',bar:'#14b8a6'},
 ];
-const TAG_STYLE={
-  geral:{bg:'#f3f4f6',text:'#374151',dot:'#9ca3af'},entrega:{bg:'#eff4ff',text:'#1d4ed8',dot:'#3b82f6'},
-  gargalo:{bg:'#fef2f2',text:'#b91c1c',dot:'#dc2626'},desenvolvimento:{bg:'#fffbeb',text:'#92400e',dot:'#f59e0b'},
-  feedback:{bg:'#fdf4ff',text:'#7e22ce',dot:'#a855f7'},'liderança':{bg:'#f0fdf4',text:'#15803d',dot:'#22c55e'},
-  autonomia:{bg:'#f0fdf4',text:'#15803d',dot:'#22c55e'},'inovação':{bg:'#f0fdfa',text:'#115e59',dot:'#14b8a6'},
-};
-const CAT_STYLE={
-  geral:{bg:'#f3f4f6',text:'#374151'},comportamento:{bg:'#eff4ff',text:'#1d4ed8'},
-  brainstorm:{bg:'#fdf4ff',text:'#7e22ce'},reconhecimento:{bg:'#f0fdf4',text:'#15803d'},
-  'observação':{bg:'#fffbeb',text:'#92400e'},plano:{bg:'#f0fdfa',text:'#115e59'},
-};
-const ACT_STYLE={
-  responsabilidade:{bg:'#eff4ff',text:'#1d4ed8',icon:'ti-briefcase'},projeto:{bg:'#f0fdfa',text:'#115e59',icon:'ti-rocket'},
-  ritual:{bg:'#fdf4ff',text:'#7e22ce',icon:'ti-repeat'},mentoria:{bg:'#f0fdf4',text:'#15803d',icon:'ti-users'},
-  aprendizado:{bg:'#fffbeb',text:'#92400e',icon:'ti-book'},'liderança':{bg:'#fff1f2',text:'#9f1239',icon:'ti-crown'},
-};
+const TAG_STYLE={geral:{bg:'#f3f4f6',text:'#374151',dot:'#9ca3af'},entrega:{bg:'#eff4ff',text:'#1d4ed8',dot:'#3b82f6'},gargalo:{bg:'#fef2f2',text:'#b91c1c',dot:'#dc2626'},desenvolvimento:{bg:'#fffbeb',text:'#92400e',dot:'#f59e0b'},feedback:{bg:'#fdf4ff',text:'#7e22ce',dot:'#a855f7'},'liderança':{bg:'#f0fdf4',text:'#15803d',dot:'#22c55e'},autonomia:{bg:'#f0fdf4',text:'#15803d',dot:'#22c55e'},'inovação':{bg:'#f0fdfa',text:'#115e59',dot:'#14b8a6'}};
+const CAT_STYLE={geral:{bg:'#f3f4f6',text:'#374151'},comportamento:{bg:'#eff4ff',text:'#1d4ed8'},brainstorm:{bg:'#fdf4ff',text:'#7e22ce'},reconhecimento:{bg:'#f0fdf4',text:'#15803d'},'observação':{bg:'#fffbeb',text:'#92400e'},plano:{bg:'#f0fdfa',text:'#115e59'}};
+const ACT_STYLE={responsabilidade:{bg:'#eff4ff',text:'#1d4ed8',icon:'ti-briefcase'},projeto:{bg:'#f0fdfa',text:'#115e59',icon:'ti-rocket'},ritual:{bg:'#fdf4ff',text:'#7e22ce',icon:'ti-repeat'},mentoria:{bg:'#f0fdf4',text:'#15803d',icon:'ti-users'},aprendizado:{bg:'#fffbeb',text:'#92400e',icon:'ti-book'},'liderança':{bg:'#fff1f2',text:'#9f1239',icon:'ti-crown'}};
 const IMPACT_STYLE={alto:{bg:'#fef2f2',text:'#b91c1c'},'médio':{bg:'#fffbeb',text:'#92400e'},baixo:{bg:'#f0fdf4',text:'#15803d'}};
 const FB_TYPE={positivo:{bg:'#f0fdf4',text:'#15803d'},construtivo:{bg:'#fef2f2',text:'#b91c1c'},misto:{bg:'#fffbeb',text:'#92400e'}};
 const STATUS_STYLE={ativo:{bg:'#f0fdf4',text:'#15803d'},pausado:{bg:'#fffbeb',text:'#92400e'},'concluído':{bg:'#f3f4f6',text:'#374151'}};
-const PERGUNTAS=[
-  'O que ocupa a maior parte do seu tempo hoje? Está alinhado com suas prioridades?',
-  'Quais atividades você sente que só você consegue fazer no time?',
-  'Em quais momentos você costuma ficar travado ou sentir que o trabalho desacelera?',
-  'O que você mais frequentemente precisa esperar de alguém para conseguir avançar?',
-  'Se você pudesse remover uma fricção do seu dia a dia, o que seria?',
-  'Você tem clareza sobre o que é esperado de você e como seu sucesso é medido?',
-  'Tem momentos em que se sente sobrecarregado? O que costuma desencadear isso?',
-  'O que te dá mais energia no trabalho? E o que mais drena?',
-  'Onde você enxerga que pode contribuir mais do que contribui hoje?',
-  'O que precisaria para trabalhar com menos atrito?',
-];
+const PERGUNTAS=['O que ocupa a maior parte do seu tempo hoje? Está alinhado com suas prioridades?','Quais atividades você sente que só você consegue fazer no time?','Em quais momentos você costuma ficar travado ou sentir que o trabalho desacelera?','O que você mais frequentemente precisa esperar de alguém para conseguir avançar?','Se você pudesse remover uma fricção do seu dia a dia, o que seria?','Você tem clareza sobre o que é esperado de você e como seu sucesso é medido?','Tem momentos em que se sente sobrecarregado? O que costuma desencadear isso?','O que te dá mais energia no trabalho? E o que mais drena?','Onde você enxerga que pode contribuir mais do que contribui hoje?','O que precisaria para trabalhar com menos atrito?'];
 
-const OVERDUE_DAYS=30;
-let people=[],activeId=null,radarChart=null,evoChart=null,compareChart=null,editingPersonId=null,_msTarget={pid:null,pi:null};
-const SK='dashboard-liderados-v4';
+let people=[], activeId=null, radarChart=null, evoChart=null, compareChart=null, editingPersonId=null, _msTarget={pid:null,pdi_id:null};
 
-function loadData(){
-  try{const r=localStorage.getItem(SK);if(r){people=JSON.parse(r);migratePeople();return;}}catch(e){}
-  people=[
-    {id:1,name:'Ana Souza',role:'Desenvolvedora Sênior',area:'Backend',colorIdx:0,next1on1:'2025-06-10',
-     competencies:[{label:'Entrega',score:9},{label:'Comunicação',score:7},{label:'Autonomia',score:8},{label:'Colaboração',score:8},{label:'Inovação',score:6}],
-     bottlenecks:['Dificuldade em delegar — tende a centralizar tarefas','Aguarda aprovação para pequenas decisões técnicas'],
-     sessions:[
-       {date:'2025-03-15',score:7.5,notes:'Boa conversa sobre roadmap pessoal. Quer assumir mais responsabilidades de arquitetura.',tag:'desenvolvimento'},
-       {date:'2025-04-18',score:7,notes:'Dificuldade em delegar tarefas menores para os juniores.',tag:'gargalo'},
-       {date:'2025-05-14',score:8.5,notes:'Apresentou proposta de melhoria de performance. Ótima iniciativa.',tag:'inovação'},
-       {date:'2025-05-28',score:8.5,notes:'Finalizou onboarding de um dev júnior com muita atenção.',tag:'desenvolvimento'},
-     ],
-     comments:[
-       {date:'2025-04-20',cat:'observação',text:'Tem perfil técnico muito forte mas trava na hora de dar feedback para colegas.'},
-       {date:'2025-05-10',cat:'brainstorm',text:'Brainstorm sobre trilha para sênior + lead. Quer crescer em arquitetura, não em gestão.'},
-     ],
-     perspectiva:[
-       {qi:0,date:'2025-03-15',answer:'Passo a maior parte do tempo em code review e reuniões. Deveria estar mais em design de soluções.'},
-       {qi:7,date:'2025-03-15',answer:'Me energizo resolvendo problemas complexos. Me drena o excesso de reuniões operacionais.'},
-     ],
-     atividades:[
-       {id:1,title:'Code review semanal',type:'responsabilidade',status:'ativo',desc:'Revisar PRs do time toda sexta'},
-       {id:2,title:'Mentoria dev júnior',type:'mentoria',status:'ativo',desc:'1:1 quinzenal com o Pedro'},
-       {id:3,title:'Módulo de pagamentos v2',type:'projeto',status:'ativo',desc:'Refatoração completa do checkout'},
-     ],
-     pdis:[{id:1,title:'Desenvolver habilidade de delegação',desc:'Aprender a distribuir tarefas com mais confiança.',impact:'alto',deadline:'2025-09-30',
-       milestones:[{text:'Ler "The Manager\'s Path"',done:true,date:'2025-05-01'},{text:'Delegar 3 tarefas técnicas por sprint',done:true,date:'2025-06-01'},{text:'Retrospectiva de delegação com o time',done:false,date:'2025-07-01'},{text:'Avaliação com o gestor',done:false,date:'2025-09-30'}]
-     }],
-     feedback360:[
-       {from:'Carlos (par)',type:'positivo',score:5,date:'2025-05-10',text:'Entregou a refatoração com qualidade excepcional e documentou tudo sem ser solicitada.'},
-       {from:'Ricardo (PM)',type:'misto',score:4,date:'2025-04-15',text:'Muito boa tecnicamente, mas às vezes demora para comunicar bloqueios para o time de produto.'},
-     ],
-     cargoHistorico:[
-       {title:'Desenvolvedora Júnior',date:'2021-03-01',note:'Entrada na empresa'},
-       {title:'Desenvolvedora Plena',date:'2022-09-01',note:'Promoção após ciclo de avaliação'},
-       {title:'Desenvolvedora Sênior',date:'2024-02-01',note:'Promoção — destaque em projetos de arquitetura'},
-     ]
-    },
-    {id:2,name:'Bruno Lima',role:'Tech Lead',area:'Liderança',colorIdx:1,next1on1:'2025-06-12',
-     competencies:[{label:'Entrega',score:8},{label:'Comunicação',score:9},{label:'Autonomia',score:7},{label:'Colaboração',score:9},{label:'Inovação',score:7}],
-     bottlenecks:['Evita conversas difíceis com membros do time','Às vezes assume trabalho técnico que poderia delegar'],
-     sessions:[
-       {date:'2025-03-20',score:8,notes:'Ótimo planejamento de sprint. Time bem alinhado.',tag:'liderança'},
-       {date:'2025-04-10',score:7.5,notes:'Dificuldade em dar feedback negativo. Combinamos de praticar.',tag:'gargalo'},
-       {date:'2025-05-25',score:8,notes:'Conduziu planning de forma estruturada. Ainda hesita no feedback duro.',tag:'liderança'},
-     ],
-     comments:[],perspectiva:[],
-     atividades:[{id:1,title:'Planning quinzenal',type:'ritual',status:'ativo',desc:'Facilita o planning do time'},{id:2,title:'1:1s com o time',type:'mentoria',status:'ativo',desc:'Reunião individual mensal com cada membro'}],
-     pdis:[{id:1,title:'Feedback difícil e conversas corajosas',desc:'Praticar dar feedback negativo de forma construtiva.',impact:'alto',deadline:'2025-08-01',
-       milestones:[{text:'Workshop de comunicação não-violenta',done:true,date:'2025-05-15'},{text:'Dar feedback difícil para ao menos 1 pessoa',done:false,date:'2025-06-30'},{text:'Revisão com o gestor',done:false,date:'2025-08-01'}]
-     }],
-     feedback360:[],cargoHistorico:[{title:'Desenvolvedor Sênior',date:'2020-01-01',note:'Entrada na empresa'},{title:'Tech Lead',date:'2023-03-01',note:'Promoção para liderança técnica'}]
-    },
-    {id:3,name:'Carla Mendes',role:'Desenvolvedora Júnior',area:'Frontend',colorIdx:2,next1on1:'2025-06-08',
-     competencies:[{label:'Entrega',score:6},{label:'Comunicação',score:7},{label:'Autonomia',score:5},{label:'Colaboração',score:8},{label:'Inovação',score:7}],
-     bottlenecks:['Baixa autonomia — pede validação com frequência','Dificuldade em estimar o tempo das tarefas'],
-     sessions:[
-       {date:'2025-03-25',score:5.5,notes:'Muita dependência de validação. Definimos meta de autonomia.',tag:'gargalo'},
-       {date:'2025-04-30',score:6.5,notes:'Tomou iniciativa em corrigir bug crítico. Evolução real.',tag:'autonomia'},
-       {date:'2025-05-27',score:7,notes:'Melhorou estimativas. Ainda pede validação em excesso.',tag:'geral'},
-     ],
-     comments:[],perspectiva:[{qi:4,date:'2025-03-25',answer:'Removeria a necessidade de aprovar cada PR antes de subir para staging.'}],
-     atividades:[{id:1,title:'Componentes UI',type:'responsabilidade',status:'ativo',desc:'Design system da plataforma'},{id:2,title:'Curso de acessibilidade',type:'aprendizado',status:'concluído',desc:'Finalizado em Abril/2025'}],
-     pdis:[],feedback360:[],cargoHistorico:[{title:'Desenvolvedora Júnior',date:'2024-07-01',note:'Entrada na empresa'}]
-    },
-    {id:4,name:'Diego Rocha',role:'Analista de Dados',area:'Dados',colorIdx:3,next1on1:'2025-04-10',
-     competencies:[{label:'Entrega',score:6},{label:'Comunicação',score:5},{label:'Autonomia',score:7},{label:'Colaboração',score:5},{label:'Inovação',score:8}],
-     bottlenecks:['Comunicação com stakeholders precisa melhorar','Qualidade das entregas caiu — investigar causa raiz'],
-     sessions:[
-       {date:'2025-04-08',score:7.5,notes:'Boa apresentação de dashboard para a diretoria.',tag:'inovação'},
-       {date:'2025-04-24',score:6,notes:'Conflito com colega por falta de alinhamento de escopo.',tag:'gargalo'},
-       {date:'2025-05-22',score:6.5,notes:'Entregou análise com dados desatualizados. Definimos checklist.',tag:'gargalo'},
-     ],
-     comments:[],perspectiva:[],
-     atividades:[{id:1,title:'Dashboard semanal de vendas',type:'responsabilidade',status:'ativo',desc:'Atualizado toda segunda'},{id:2,title:'Análise de churn Q2',type:'projeto',status:'pausado',desc:'Aguardando dados do CRM'}],
-     pdis:[],feedback360:[],cargoHistorico:[{title:'Analista de Dados Jr',date:'2022-05-01',note:'Entrada na empresa'},{title:'Analista de Dados',date:'2024-01-01',note:'Promoção por performance'}]
-    }
-  ];
-  saveData();
-}
-
-function migratePeople(){
-  people.forEach(p=>{
-    if(!p.comments)p.comments=[];
-    if(!p.perspectiva)p.perspectiva=[];
-    if(!p.atividades)p.atividades=[];
-    if(!p.pdis)p.pdis=[];
-    if(!p.feedback360)p.feedback360=[];
-    if(!p.cargoHistorico)p.cargoHistorico=[];
-  });
-}
-function saveData(){try{localStorage.setItem(SK,JSON.stringify(people));}catch(e){}}
 function getColor(idx){return PALETTE[idx%PALETTE.length];}
 function getInitials(n){return n.split(' ').slice(0,2).map(w=>w[0]).join('').toUpperCase();}
-function fmtDate(d){if(!d)return'';const m=['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez'];const[,mo,day]=d.split('-');return day+'/'+m[parseInt(mo)-1];}
-function fmtDateFull(d){if(!d)return'';const[y,m,day]=d.split('-');return`${day}/${m}/${y}`;}
+function fmtDate(d){if(!d)return'';const m=['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez'];const[,mo,day]=d.split('T')[0].split('-');return day+'/'+m[parseInt(mo)-1];}
+function fmtDateFull(d){if(!d)return'';const s=d.split('T')[0];const[y,m,day]=s.split('-');return`${day}/${m}/${y}`;}
 function today(){return new Date().toISOString().split('T')[0];}
-function showToast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2200);}
-function calcTrend(p){if(p.sessions.length<2)return null;return+(p.sessions[p.sessions.length-1].score-p.sessions[p.sessions.length-2].score).toFixed(1);}
+function showToast(msg,err=false){const t=document.getElementById('toast');t.textContent=msg;t.className='toast'+(err?' error':'');t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2500);}
+function loading(show){document.getElementById('loading').classList.toggle('hidden',!show);}
+function calcTrend(p){const s=p._sessions||[];if(s.length<2)return null;const sorted=[...s].sort((a,b)=>a.date.localeCompare(b.date));return+(sorted[sorted.length-1].score-sorted[sorted.length-2].score).toFixed(1);}
+function lastSession(p){const s=p._sessions||[];if(!s.length)return null;return s.reduce((a,b)=>a.date>b.date?a:b);}
 function daysSince(dateStr){if(!dateStr)return 9999;return Math.floor((new Date()-new Date(dateStr))/(1000*60*60*24));}
-function lastSessionDate(p){return p.sessions.length?p.sessions.reduce((a,b)=>a.date>b.date?a:b).date:null;}
-function isOverdue(p){return daysSince(lastSessionDate(p))>OVERDUE_DAYS;}
+function isOverdue(p){return daysSince((lastSession(p)||{}).date)>30;}
+
+async function loadAll(){
+  loading(true);
+  try{
+    const [ps,comps,sessions,bts,comments,persp,ativs,pdis,milestones,fb,cargo]=await Promise.all([
+      get('people','?order=id.asc'),
+      get('competencies','?order=id.asc'),
+      get('sessions','?order=date.asc'),
+      get('bottlenecks','?order=id.asc'),
+      get('comments','?order=id.asc'),
+      get('perspectiva','?order=id.asc'),
+      get('atividades','?order=id.asc'),
+      get('pdis','?order=id.asc'),
+      get('milestones','?order=id.asc'),
+      get('feedback360','?order=id.asc'),
+      get('cargo_historico','?order=date.asc'),
+    ]);
+    people=(ps||[]).map(p=>({
+      ...p,
+      _comps:(comps||[]).filter(x=>x.person_id===p.id),
+      _sessions:(sessions||[]).filter(x=>x.person_id===p.id),
+      _bottlenecks:(bts||[]).filter(x=>x.person_id===p.id),
+      _comments:(comments||[]).filter(x=>x.person_id===p.id),
+      _perspectiva:(persp||[]).filter(x=>x.person_id===p.id),
+      _atividades:(ativs||[]).filter(x=>x.person_id===p.id),
+      _pdis:(pdis||[]).filter(x=>x.person_id===p.id).map(pdi=>({...pdi,_milestones:(milestones||[]).filter(m=>m.pdi_id===pdi.id)})),
+      _feedback360:(fb||[]).filter(x=>x.person_id===p.id),
+      _cargo:(cargo||[]).filter(x=>x.person_id===p.id),
+    }));
+    renderCards();
+  }catch(e){showToast('Erro ao carregar: '+e.message,true);}
+  loading(false);
+}
 
 function updateFilters(){
   const areas=[...new Set(people.map(p=>p.area).filter(Boolean))].sort();
-  const sel=document.getElementById('filter-area');
-  const cur=sel.value;
+  const sel=document.getElementById('filter-area'),cur=sel.value;
   sel.innerHTML='<option value="">Todas as áreas</option>'+areas.map(a=>`<option value="${a}"${a===cur?' selected':''}>${a}</option>`).join('');
 }
 
 function renderMetrics(){
   document.getElementById('m-total').textContent=people.length;
   document.getElementById('m-total2').textContent=people.length;
-  const allLast=people.map(p=>p.sessions.length?p.sessions.reduce((a,b)=>a.date>b.date?a:b).score:null).filter(Boolean);
+  const allLast=people.map(p=>{const s=lastSession(p);return s?s.score:null;}).filter(Boolean);
   document.getElementById('m-avg').textContent=allLast.length?(allLast.reduce((a,b)=>a+b,0)/allLast.length).toFixed(1):'—';
-  document.getElementById('m-sessions').textContent=people.reduce((a,p)=>a+p.sessions.length,0);
+  document.getElementById('m-sessions').textContent=people.reduce((a,p)=>a+(p._sessions||[]).length,0);
   const growing=people.filter(p=>{const t=calcTrend(p);return t!==null&&t>0;}).length;
   document.getElementById('m-growing').textContent=growing;
-  const pdisAtivos=people.reduce((a,p)=>a+(p.pdis||[]).filter(pdi=>pdi.milestones.filter(m=>m.done).length<pdi.milestones.length).length,0);
+  const pdisAtivos=people.reduce((a,p)=>a+(p._pdis||[]).filter(pdi=>(pdi._milestones||[]).filter(m=>m.done).length<(pdi._milestones||[]).length).length,0);
   document.getElementById('m-pdis').textContent=pdisAtivos;
   const overdue=people.filter(isOverdue);
   document.getElementById('m-overdue').textContent=overdue.length;
   const ab=document.getElementById('alert-bar');
-  if(overdue.length){
-    ab.classList.add('vis');
-    document.getElementById('alert-names').innerHTML=overdue.map(p=>`<span class="alert-item" onclick="selectPerson(${p.id})"><i class="ti ti-user" style="font-size:12px"></i>${p.name}</span>`).join('');
-  }else{ab.classList.remove('vis');}
+  if(overdue.length){ab.classList.add('vis');document.getElementById('alert-names').innerHTML=overdue.map(p=>`<span class="alert-item" onclick="selectPerson(${p.id})"><i class="ti ti-user" style="font-size:12px"></i>${p.name}</span>`).join('');}
+  else ab.classList.remove('vis');
   document.getElementById('sub-date').textContent='Atualizado em '+new Date().toLocaleDateString('pt-BR');
 }
 
@@ -656,33 +516,30 @@ function renderCards(){
     return true;
   });
   if(!people.length){grid.innerHTML='<div style="grid-column:1/-1;font-size:13px;color:var(--text3);padding:2rem 0;text-align:center">Nenhum liderado. Clique em "Novo liderado".</div>';return;}
-  if(!filtered.length){grid.innerHTML='<div style="grid-column:1/-1;font-size:13px;color:var(--text3);padding:2rem 0;text-align:center">Nenhum liderado encontrado com os filtros atuais.</div>';return;}
+  if(!filtered.length){grid.innerHTML='<div style="grid-column:1/-1;font-size:13px;color:var(--text3);padding:2rem 0;text-align:center">Nenhum liderado encontrado com os filtros.</div>';return;}
   grid.innerHTML=filtered.map(p=>{
-    const c=getColor(p.colorIdx||0),t=calcTrend(p);
+    const c=getColor(p.color_idx||0),t=calcTrend(p);
     const tl=t===null?'— sem dados':t>0?`↑ +${t}`:t<0?`↓ ${t}`:'→ estável';
     const tb=t===null?'#f3f4f6':t>0?'#f0fdf4':t<0?'#fef2f2':'#f3f4f6';
     const tt=t===null?'#6b7280':t>0?'#15803d':t<0?'#b91c1c':'#6b7280';
-    const ls=p.sessions.length?p.sessions.reduce((a,b)=>a.date>b.date?a:b).score:null;
-    const pdiC=(p.pdis||[]).length;
+    const ls=lastSession(p);
+    const pdiC=(p._pdis||[]).length;
     const overdue=isOverdue(p);
-    const ds=daysSince(lastSessionDate(p));
+    const ds=daysSince((ls||{}).date);
+    const comps=p._comps||[];
     return`<div class="pcard ${activeId===p.id?'active':''} ${overdue?'overdue':''}" onclick="selectPerson(${p.id})">
-      <div class="phead">
-        <div class="av" style="background:${c.bg};color:${c.text}">${getInitials(p.name)}</div>
-        <div style="flex:1;min-width:0"><div class="pname">${p.name}</div><div class="prole">${p.role}</div></div>
-        ${overdue?`<span title="Sem 1:1 há ${ds} dias" style="font-size:14px;color:#f59e0b;flex-shrink:0"><i class="ti ti-clock"></i></span>`:''}
+      <div class="phead"><div class="av" style="background:${c.bg};color:${c.text}">${getInitials(p.name)}</div>
+      <div style="flex:1;min-width:0"><div class="pname">${p.name}</div><div class="prole">${p.role||''}</div></div>
+      ${overdue?`<span title="Sem 1:1 há ${ds} dias" style="font-size:14px;color:#f59e0b"><i class="ti ti-clock"></i></span>`:''}
       </div>
       <div class="ptags">
         <span class="tag" style="background:${c.bg};color:${c.text}">${p.area||'Geral'}</span>
-        ${ls?`<span class="tag" style="background:#f3f4f6;color:#374151;font-family:'DM Mono',monospace">★ ${ls}</span>`:''}
+        ${ls?`<span class="tag" style="background:#f3f4f6;color:#374151;font-family:'DM Mono',monospace">★ ${ls.score}</span>`:''}
         ${pdiC?`<span class="tag" style="background:#fdf4ff;color:#7e22ce">${pdiC} PDI${pdiC>1?'s':''}</span>`:''}
         ${overdue?`<span class="tag" style="background:#fffbeb;color:#92400e">${ds}d sem 1:1</span>`:''}
       </div>
-      <div class="comps">${p.competencies.map(comp=>`<div class="crow"><span class="clabel">${comp.label}</span><div class="cbg"><div class="cbar" style="width:${comp.score*10}%;background:${c.bar}"></div></div><span class="cscore">${comp.score}</span></div>`).join('')}</div>
-      <div class="pfoot">
-        <span class="next1"><i class="ti ti-calendar" style="font-size:12px;vertical-align:-1px;margin-right:3px"></i>${p.next1on1?fmtDate(p.next1on1):'—'}</span>
-        <span class="tbadge" style="background:${tb};color:${tt}">${tl}</span>
-      </div>
+      <div class="comps">${comps.map(comp=>`<div class="crow"><span class="clabel">${comp.label}</span><div class="cbg"><div class="cbar" style="width:${comp.score*10}%;background:${c.bar}"></div></div><span class="cscore">${comp.score}</span></div>`).join('')}</div>
+      <div class="pfoot"><span class="next1"><i class="ti ti-calendar" style="font-size:12px;vertical-align:-1px;margin-right:3px"></i>${p.next1on1?fmtDate(p.next1on1):'—'}</span><span class="tbadge" style="background:${tb};color:${tt}">${tl}</span></div>
     </div>`;
   }).join('');
 }
@@ -695,188 +552,218 @@ function selectPerson(id){
   const p=people.find(x=>x.id===id);
   panel.classList.add('vis');
   document.getElementById('dp-name').textContent=p.name;
-  document.getElementById('dp-role').textContent=p.role+(p.area?' · '+p.area:'');
-  renderHistory(p);renderCompDetail(p);renderBottlenecks(p);
-  renderComments(p);renderPerspectiva(p);renderAtividades(p);renderPDI(p);renderFeedback360(p);renderCargo(p);
+  document.getElementById('dp-role').textContent=(p.role||'')+(p.area?' · '+p.area:'');
+  renderHistory(p);renderCompDetail(p);renderBottlenecks(p);renderComments(p);renderPerspectiva(p);renderAtividades(p);renderPDI(p);renderFeedback360(p);renderCargo(p);
   switchTabTo('t-hist');
   setTimeout(()=>panel.scrollIntoView({behavior:'smooth',block:'nearest'}),50);
 }
 
 function renderHistory(p){
-  const sorted=[...p.sessions].sort((a,b)=>b.date.localeCompare(a.date));
+  const sorted=[...(p._sessions||[])].sort((a,b)=>b.date.localeCompare(a.date));
   if(!sorted.length){document.getElementById('dp-history').innerHTML='<div class="hist-empty">Nenhuma 1:1 registrada ainda.</div>';return;}
-  document.getElementById('dp-history').innerHTML=sorted.map((s,i)=>{
-    const tc=TAG_STYLE[s.tag]||TAG_STYLE.geral;
-    const sc=s.score>=7?'#15803d':s.score>=5?'#92400e':'#b91c1c';
-    return`<div class="hist-item"><div class="hdot" style="background:${tc.dot}"></div><span class="hdate">${fmtDateFull(s.date)}</span><span class="htxt">${s.notes}<span class="htag" style="background:${tc.bg};color:${tc.text}">${s.tag}</span><span class="hscore" style="color:${sc}">★ ${s.score}</span><button onclick="deleteSession(${p.id},'${s.date}',${i})" style="margin-left:8px;background:none;border:none;cursor:pointer;color:var(--text3);font-size:13px;vertical-align:middle"><i class="ti ti-trash"></i></button></span></div>`;
+  document.getElementById('dp-history').innerHTML=sorted.map(s=>{
+    const tc=TAG_STYLE[s.tag]||TAG_STYLE.geral,sc=s.score>=7?'#15803d':s.score>=5?'#92400e':'#b91c1c';
+    return`<div class="hist-item"><div class="hdot" style="background:${tc.dot}"></div><span class="hdate">${fmtDateFull(s.date)}</span><span class="htxt">${s.notes||''}<span class="htag" style="background:${tc.bg};color:${tc.text}">${s.tag}</span><span class="hscore" style="color:${sc}">★ ${s.score}</span><button onclick="deleteSession(${s.id},${p.id})" style="margin-left:8px;background:none;border:none;cursor:pointer;color:var(--text3);font-size:13px;vertical-align:middle"><i class="ti ti-trash"></i></button></span></div>`;
   }).join('');
 }
+
 function renderCompDetail(p){
-  const c=getColor(p.colorIdx||0);
-  document.getElementById('dp-comp-detail').innerHTML=p.competencies.map((comp,i)=>`<div class="comp-edit-row"><span class="comp-edit-label">${comp.label}</span><input type="range" min="1" max="10" step="0.5" value="${comp.score}" class="comp-edit-bar" oninput="updateComp(${p.id},${i},this.value)" style="accent-color:${c.bar}"/><span class="comp-edit-score" id="cs-${p.id}-${i}">${comp.score}</span></div>`).join('');
+  const c=getColor(p.color_idx||0),comps=p._comps||[];
+  document.getElementById('dp-comp-detail').innerHTML=comps.map(comp=>`<div class="comp-edit-row"><span class="comp-edit-label">${comp.label}</span><input type="range" min="1" max="10" step="0.5" value="${comp.score}" class="comp-edit-bar" oninput="updateComp(${comp.id},${p.id},this.value)" style="accent-color:${c.bar}"/><span class="comp-edit-score" id="cs-${comp.id}">${comp.score}</span></div>`).join('');
 }
-function updateComp(pid,idx,val){
-  const p=people.find(x=>x.id===pid);if(!p)return;
-  p.competencies[idx].score=parseFloat(val);
-  document.getElementById(`cs-${pid}-${idx}`).textContent=parseFloat(val);
-  saveData();renderCards();
-  if(document.getElementById('t-comp').classList.contains('on'))setTimeout(()=>renderRadar(p),30);
+
+async function updateComp(compId,pid,val){
+  document.getElementById(`cs-${compId}`).textContent=parseFloat(val);
+  try{
+    await patch('competencies',{score:parseFloat(val)},`?id=eq.${compId}`);
+    const p=people.find(x=>x.id===pid);
+    const c=p._comps.find(x=>x.id===compId);if(c)c.score=parseFloat(val);
+    renderCards();
+    if(document.getElementById('t-comp').classList.contains('on'))setTimeout(()=>renderRadar(p),30);
+  }catch(e){showToast('Erro ao salvar',true);}
 }
+
 function renderBottlenecks(p){
-  const el=document.getElementById('dp-bottlenecks');
-  if(!p.bottlenecks.length){el.innerHTML='<div style="font-size:13px;color:var(--text3)">Nenhum gargalo registrado.</div>';return;}
-  el.innerHTML=p.bottlenecks.map((b,i)=>`<div class="bitem"><i class="ti ti-alert-circle"></i><span style="flex:1">${b}</span><button onclick="removeBottleneck(${p.id},${i})" style="background:none;border:none;cursor:pointer;color:var(--red);font-size:13px"><i class="ti ti-x"></i></button></div>`).join('');
+  const el=document.getElementById('dp-bottlenecks'),bts=p._bottlenecks||[];
+  if(!bts.length){el.innerHTML='<div style="font-size:13px;color:var(--text3)">Nenhum gargalo.</div>';return;}
+  el.innerHTML=bts.map(b=>`<div class="bitem"><i class="ti ti-alert-circle" style="font-size:15px;color:var(--red);flex-shrink:0;margin-top:1px"></i><span style="flex:1">${b.text}</span><button onclick="removeBottleneck(${b.id},${p.id})" style="background:none;border:none;cursor:pointer;color:var(--red);font-size:13px"><i class="ti ti-x"></i></button></div>`).join('');
 }
-function addBottleneck(){if(!activeId)return;const i=document.getElementById('new-bottleneck'),t=i.value.trim();if(!t)return;const p=people.find(x=>x.id===activeId);p.bottlenecks.push(t);i.value='';saveData();renderBottlenecks(p);showToast('Gargalo adicionado');}
-function removeBottleneck(pid,idx){const p=people.find(x=>x.id===pid);p.bottlenecks.splice(idx,1);saveData();renderBottlenecks(p);}
+async function addBottleneck(){
+  if(!activeId)return;const inp=document.getElementById('new-bottleneck'),txt=inp.value.trim();if(!txt)return;
+  try{const r=await post('bottlenecks',{person_id:activeId,text:txt});const p=people.find(x=>x.id===activeId);p._bottlenecks.push(r[0]);inp.value='';renderBottlenecks(p);showToast('Gargalo adicionado');}catch(e){showToast('Erro',true);}
+}
+async function removeBottleneck(id,pid){
+  try{await del('bottlenecks',`?id=eq.${id}`);const p=people.find(x=>x.id===pid);p._bottlenecks=p._bottlenecks.filter(x=>x.id!==id);renderBottlenecks(p);}catch(e){showToast('Erro',true);}
+}
 
 function renderComments(p){
-  if(!p.comments)p.comments=[];
-  const el=document.getElementById('dp-comments');
-  if(!p.comments.length){el.innerHTML='<div style="font-size:13px;color:var(--text3);margin-bottom:1rem">Nenhum comentário ainda.</div>';return;}
-  el.innerHTML=[...p.comments].reverse().map((c,ri)=>{
-    const cs=CAT_STYLE[c.cat]||CAT_STYLE.geral;
-    const realIdx=p.comments.length-1-ri;
-    return`<div class="comment-card"><div class="comment-meta"><span class="comment-date">${fmtDateFull(c.date)}</span><span class="comment-cat" style="background:${cs.bg};color:${cs.text}">${c.cat}</span><button onclick="removeComment(${p.id},${realIdx})" style="margin-left:auto;background:none;border:none;cursor:pointer;color:var(--text3);font-size:13px"><i class="ti ti-trash"></i></button></div><div class="comment-text">${c.text}</div></div>`;
-  }).join('');
+  const el=document.getElementById('dp-comments'),cs=[...(p._comments||[])].reverse();
+  if(!cs.length){el.innerHTML='<div style="font-size:13px;color:var(--text3);margin-bottom:1rem">Nenhum comentário.</div>';return;}
+  el.innerHTML=cs.map(c=>{const cs2=CAT_STYLE[c.cat]||CAT_STYLE.geral;return`<div class="comment-card"><div class="comment-meta"><span class="comment-date">${fmtDateFull(c.date)}</span><span class="comment-cat" style="background:${cs2.bg};color:${cs2.text}">${c.cat}</span><button onclick="removeComment(${c.id},${p.id})" style="margin-left:auto;background:none;border:none;cursor:pointer;color:var(--text3);font-size:13px"><i class="ti ti-trash"></i></button></div><div class="comment-text">${c.text}</div></div>`;}).join('');
 }
-function addComment(){if(!activeId)return;const cat=document.getElementById('c-cat').value,text=document.getElementById('c-text').value.trim();if(!text)return;const p=people.find(x=>x.id===activeId);p.comments.push({date:today(),cat,text});document.getElementById('c-text').value='';saveData();renderComments(p);showToast('Comentário salvo');}
-function removeComment(pid,idx){if(!confirm('Excluir?'))return;const p=people.find(x=>x.id===pid);p.comments.splice(idx,1);saveData();renderComments(p);}
+async function addComment(){
+  if(!activeId)return;const cat=document.getElementById('c-cat').value,text=document.getElementById('c-text').value.trim();if(!text)return;
+  try{const r=await post('comments',{person_id:activeId,date:today(),cat,text});const p=people.find(x=>x.id===activeId);p._comments.push(r[0]);document.getElementById('c-text').value='';renderComments(p);showToast('Comentário salvo');}catch(e){showToast('Erro',true);}
+}
+async function removeComment(id,pid){
+  if(!confirm('Excluir?'))return;
+  try{await del('comments',`?id=eq.${id}`);const p=people.find(x=>x.id===pid);p._comments=p._comments.filter(x=>x.id!==id);renderComments(p);}catch(e){showToast('Erro',true);}
+}
 
 function renderPerspectiva(p){
-  if(!p.perspectiva)p.perspectiva=[];
+  const persp=p._perspectiva||[];
   document.getElementById('dp-perspectiva').innerHTML=PERGUNTAS.map((q,qi)=>{
-    const ans=p.perspectiva.filter(x=>x.qi===qi).sort((a,b)=>b.date.localeCompare(a.date));
-    return`<div class="pq-block"><div class="pq-header" onclick="togglePQ(${qi})"><span class="pq-question">${q}</span><span class="pq-count">${ans.length} resposta${ans.length!==1?'s':''}</span><i class="ti ti-chevron-down pq-chevron" id="pqc-${qi}"></i></div><div class="pq-answers" id="pqa-${qi}">${ans.map(a=>{const ri=p.perspectiva.findIndex(x=>x.qi===qi&&x.date===a.date&&x.answer===a.answer);return`<div class="pq-answer"><div class="pq-answer-meta"><span class="pq-answer-date">${fmtDateFull(a.date)}</span><button onclick="removePerspectiva(${p.id},${ri})" style="margin-left:auto;background:none;border:none;cursor:pointer;color:var(--text3);font-size:12px"><i class="ti ti-trash"></i></button></div><div class="pq-answer-text">${a.answer}</div></div>`;}).join('')}<div class="pq-answer-form"><div style="font-size:12px;color:var(--text2);margin-bottom:6px">Registrar resposta</div><textarea id="pqi-${qi}" rows="2" style="width:100%;font-family:'DM Sans',sans-serif;font-size:13px;padding:7px 10px;border-radius:var(--radius);border:1px solid var(--border2);background:var(--surface);color:var(--text);outline:none;resize:vertical" placeholder="Resposta do liderado..."></textarea><button class="btn btn-primary btn-sm" style="margin-top:6px" onclick="addPerspectiva(${p.id},${qi})"><i class="ti ti-check"></i> Salvar</button></div></div></div>`;
+    const ans=persp.filter(x=>x.qi===qi).sort((a,b)=>b.date.localeCompare(a.date));
+    return`<div class="pq-block"><div class="pq-header" onclick="togglePQ(${qi})"><span class="pq-question">${q}</span><span class="pq-count">${ans.length} resposta${ans.length!==1?'s':''}</span><i class="ti ti-chevron-down pq-chevron" id="pqc-${qi}"></i></div><div class="pq-answers" id="pqa-${qi}">${ans.map(a=>`<div class="pq-answer"><div class="pq-answer-meta"><span class="pq-answer-date">${fmtDateFull(a.date)}</span><button onclick="removePerspectiva(${a.id},${p.id},${qi})" style="margin-left:auto;background:none;border:none;cursor:pointer;color:var(--text3);font-size:12px"><i class="ti ti-trash"></i></button></div><div class="pq-answer-text">${a.answer}</div></div>`).join('')}<div class="pq-answer-form"><div style="font-size:12px;color:var(--text2);margin-bottom:6px">Registrar resposta</div><textarea id="pqi-${qi}" rows="2" style="width:100%;font-family:'DM Sans',sans-serif;font-size:13px;padding:7px 10px;border-radius:var(--radius);border:1px solid var(--border2);background:var(--surface);color:var(--text);outline:none;resize:vertical" placeholder="Resposta do liderado..."></textarea><button class="btn btn-primary btn-sm" style="margin-top:6px" onclick="addPerspectiva(${p.id},${qi})"><i class="ti ti-check"></i> Salvar</button></div></div></div>`;
   }).join('');
 }
 function togglePQ(qi){const a=document.getElementById(`pqa-${qi}`),c=document.getElementById(`pqc-${qi}`),o=a.classList.toggle('open');c.classList.toggle('open',o);}
-function addPerspectiva(pid,qi){const i=document.getElementById(`pqi-${qi}`),answer=i.value.trim();if(!answer)return;const p=people.find(x=>x.id===pid);p.perspectiva.push({qi,date:today(),answer});i.value='';saveData();renderPerspectiva(p);showToast('Resposta salva');}
-function removePerspectiva(pid,idx){const p=people.find(x=>x.id===pid);p.perspectiva.splice(idx,1);saveData();renderPerspectiva(p);}
+async function addPerspectiva(pid,qi){
+  const inp=document.getElementById(`pqi-${qi}`),answer=inp.value.trim();if(!answer)return;
+  try{const r=await post('perspectiva',{person_id:pid,qi,date:today(),answer});const p=people.find(x=>x.id===pid);p._perspectiva.push(r[0]);inp.value='';renderPerspectiva(p);showToast('Resposta salva');}catch(e){showToast('Erro',true);}
+}
+async function removePerspectiva(id,pid,qi){
+  try{await del('perspectiva',`?id=eq.${id}`);const p=people.find(x=>x.id===pid);p._perspectiva=p._perspectiva.filter(x=>x.id!==id);renderPerspectiva(p);}catch(e){showToast('Erro',true);}
+}
 
 function renderAtividades(p){
-  if(!p.atividades)p.atividades=[];
-  const el=document.getElementById('dp-atividades');
-  if(!p.atividades.length){el.innerHTML='<div style="font-size:13px;color:var(--text3);margin-bottom:1rem">Nenhuma atividade registrada.</div>';return;}
-  el.innerHTML=p.atividades.map((a,i)=>{
-    const ts=ACT_STYLE[a.type]||ACT_STYLE.responsabilidade,ss=STATUS_STYLE[a.status]||STATUS_STYLE.ativo;
-    return`<div class="act-item"><div class="act-icon" style="background:${ts.bg};color:${ts.text}"><i class="ti ${ts.icon}"></i></div><div class="act-body"><div class="act-title">${a.title}<span class="act-status" style="background:${ss.bg};color:${ss.text}">${a.status}</span></div><div class="act-meta">${a.type}${a.desc?' · '+a.desc:''}</div></div><div style="display:flex;gap:6px;flex-shrink:0"><select onchange="changeActStatus(${p.id},${i},this.value)" style="font-size:12px;padding:4px 6px;border-radius:var(--radius);border:1px solid var(--border2);background:var(--surface);color:var(--text);cursor:pointer">${['ativo','pausado','concluído'].map(s=>`<option value="${s}"${a.status===s?' selected':''}>${s}</option>`).join('')}</select><button onclick="removeAtividade(${p.id},${i})" style="background:none;border:none;cursor:pointer;color:var(--text3);font-size:14px"><i class="ti ti-trash"></i></button></div></div>`;
-  }).join('');
+  const el=document.getElementById('dp-atividades'),ats=p._atividades||[];
+  if(!ats.length){el.innerHTML='<div style="font-size:13px;color:var(--text3);margin-bottom:1rem">Nenhuma atividade.</div>';return;}
+  el.innerHTML=ats.map(a=>{const ts=ACT_STYLE[a.type]||ACT_STYLE.responsabilidade,ss=STATUS_STYLE[a.status]||STATUS_STYLE.ativo;return`<div class="act-item"><div class="act-icon" style="background:${ts.bg};color:${ts.text}"><i class="ti ${ts.icon}"></i></div><div class="act-body"><div class="act-title">${a.title}<span class="act-status" style="background:${ss.bg};color:${ss.text}">${a.status}</span></div><div class="act-meta">${a.type}${a.descricao?' · '+a.descricao:''}</div></div><div style="display:flex;gap:6px;flex-shrink:0"><select onchange="changeActStatus(${a.id},${p.id},this.value)" style="font-size:12px;padding:4px 6px;border-radius:var(--radius);border:1px solid var(--border2);background:var(--surface);color:var(--text);cursor:pointer">${['ativo','pausado','concluído'].map(s=>`<option value="${s}"${a.status===s?' selected':''}>${s}</option>`).join('')}</select><button onclick="removeAtividade(${a.id},${p.id})" style="background:none;border:none;cursor:pointer;color:var(--text3);font-size:14px"><i class="ti ti-trash"></i></button></div></div>`;}).join('');
 }
-function addAtividade(){if(!activeId)return;const title=document.getElementById('a-title').value.trim();if(!title)return;const type=document.getElementById('a-type').value,status=document.getElementById('a-status').value,desc=document.getElementById('a-desc').value.trim();const p=people.find(x=>x.id===activeId);const newId=p.atividades.length?Math.max(...p.atividades.map(a=>a.id))+1:1;p.atividades.push({id:newId,title,type,status,desc});['a-title','a-desc'].forEach(id=>document.getElementById(id).value='');saveData();renderAtividades(p);showToast('Atividade adicionada');}
-function removeAtividade(pid,idx){const p=people.find(x=>x.id===pid);p.atividades.splice(idx,1);saveData();renderAtividades(p);}
-function changeActStatus(pid,idx,val){const p=people.find(x=>x.id===pid);p.atividades[idx].status=val;saveData();renderAtividades(p);}
+async function addAtividade(){
+  if(!activeId)return;const title=document.getElementById('a-title').value.trim();if(!title)return;
+  const type=document.getElementById('a-type').value,status=document.getElementById('a-status').value,descricao=document.getElementById('a-desc').value.trim();
+  try{const r=await post('atividades',{person_id:activeId,title,type,status,descricao});const p=people.find(x=>x.id===activeId);p._atividades.push(r[0]);['a-title','a-desc'].forEach(id=>document.getElementById(id).value='');renderAtividades(p);showToast('Atividade adicionada');}catch(e){showToast('Erro',true);}
+}
+async function removeAtividade(id,pid){
+  try{await del('atividades',`?id=eq.${id}`);const p=people.find(x=>x.id===pid);p._atividades=p._atividades.filter(x=>x.id!==id);renderAtividades(p);}catch(e){showToast('Erro',true);}
+}
+async function changeActStatus(id,pid,val){
+  try{await patch('atividades',{status:val},`?id=eq.${id}`);const p=people.find(x=>x.id===pid);const a=p._atividades.find(x=>x.id===id);if(a)a.status=val;renderAtividades(p);}catch(e){showToast('Erro',true);}
+}
 
 function renderPDI(p){
-  if(!p.pdis)p.pdis=[];
-  const el=document.getElementById('dp-pdi');
-  if(!p.pdis.length){el.innerHTML='<div style="font-size:13px;color:var(--text3);margin-bottom:1rem">Nenhum PDI cadastrado ainda.</div>';return;}
-  el.innerHTML=p.pdis.map((pdi,pi)=>{
-    const done=pdi.milestones.filter(m=>m.done).length,total=pdi.milestones.length,pct=total?Math.round(done/total*100):0;
+  const el=document.getElementById('dp-pdi'),pdis=p._pdis||[];
+  if(!pdis.length){el.innerHTML='<div style="font-size:13px;color:var(--text3);margin-bottom:1rem">Nenhum PDI cadastrado.</div>';return;}
+  el.innerHTML=pdis.map(pdi=>{
+    const ms=pdi._milestones||[],done=ms.filter(m=>m.done).length,total=ms.length,pct=total?Math.round(done/total*100):0;
     const is=IMPACT_STYLE[pdi.impact]||IMPACT_STYLE['médio'];
-    return`<div class="pdi-card"><div class="pdi-header"><div><div class="pdi-title">${pdi.title}</div>${pdi.deadline?`<div style="font-size:11px;color:var(--text3);margin-top:2px"><i class="ti ti-calendar" style="font-size:11px;vertical-align:-1px"></i> ${fmtDateFull(pdi.deadline)}</div>`:''}</div><div style="display:flex;align-items:center;gap:8px"><span class="pdi-impact" style="background:${is.bg};color:${is.text}">impacto ${pdi.impact}</span><button onclick="removePDI(${p.id},${pi})" style="background:none;border:none;cursor:pointer;color:var(--text3);font-size:14px"><i class="ti ti-trash"></i></button></div></div>${pdi.desc?`<div class="pdi-desc">${pdi.desc}</div>`:''}<div style="font-size:12px;color:var(--text2);margin-bottom:8px">Milestones · ${done}/${total} · ${pct}%</div><div class="pdi-milestones">${pdi.milestones.map((ms,mi)=>`<div class="pdi-ms"><div class="pdi-ms-check ${ms.done?'done':''}" onclick="toggleMilestone(${p.id},${pi},${mi})">${ms.done?'<i class="ti ti-check"></i>':''}</div><span class="pdi-ms-label ${ms.done?'done':''}">${ms.text}</span>${ms.date?`<span class="pdi-ms-date">${fmtDateFull(ms.date)}</span>`:''}<button onclick="removeMilestone(${p.id},${pi},${mi})" style="background:none;border:none;cursor:pointer;color:var(--text3);font-size:12px"><i class="ti ti-x"></i></button></div>`).join('')}</div><div class="pdi-progress"><div class="pdi-progress-bar" style="width:${pct}%"></div></div><button class="btn btn-sm" style="margin-top:10px" onclick="openMsModal(${p.id},${pi})"><i class="ti ti-plus"></i> Milestone</button></div>`;
+    return`<div class="pdi-card"><div class="pdi-header"><div><div class="pdi-title">${pdi.title}</div>${pdi.deadline?`<div style="font-size:11px;color:var(--text3);margin-top:2px"><i class="ti ti-calendar" style="font-size:11px;vertical-align:-1px"></i> ${fmtDateFull(pdi.deadline)}</div>`:''}</div><div style="display:flex;align-items:center;gap:8px"><span class="pdi-impact" style="background:${is.bg};color:${is.text}">impacto ${pdi.impact}</span><button onclick="removePDI(${pdi.id},${p.id})" style="background:none;border:none;cursor:pointer;color:var(--text3);font-size:14px"><i class="ti ti-trash"></i></button></div></div>${pdi.descricao?`<div class="pdi-desc">${pdi.descricao}</div>`:''}<div style="font-size:12px;color:var(--text2);margin-bottom:8px">Milestones · ${done}/${total} · ${pct}%</div><div class="pdi-milestones">${ms.map(m=>`<div class="pdi-ms"><div class="pdi-ms-check ${m.done?'done':''}" onclick="toggleMilestone(${m.id},${pdi.id},${p.id})">${m.done?'<i class="ti ti-check"></i>':''}</div><span class="pdi-ms-label ${m.done?'done':''}">${m.text}</span>${m.date?`<span class="pdi-ms-date">${fmtDateFull(m.date)}</span>`:''}<button onclick="removeMilestone(${m.id},${pdi.id},${p.id})" style="background:none;border:none;cursor:pointer;color:var(--text3);font-size:12px"><i class="ti ti-x"></i></button></div>`).join('')}</div><div class="pdi-progress"><div class="pdi-progress-bar" style="width:${pct}%"></div></div><button class="btn btn-sm" style="margin-top:10px" onclick="openMsModal(${p.id},${pdi.id})"><i class="ti ti-plus"></i> Milestone</button></div>`;
   }).join('');
 }
-function addPDI(){if(!activeId)return;const title=document.getElementById('pdi-title').value.trim();if(!title)return;const impact=document.getElementById('pdi-impact').value,deadline=document.getElementById('pdi-deadline').value,desc=document.getElementById('pdi-desc').value.trim();const msRaw=document.getElementById('pdi-ms').value.trim();const milestones=msRaw?msRaw.split('\n').filter(l=>l.trim()).map(t=>({text:t.trim(),done:false,date:''})):[];const p=people.find(x=>x.id===activeId);const newId=p.pdis.length?Math.max(...p.pdis.map(x=>x.id))+1:1;p.pdis.push({id:newId,title,desc,impact,deadline,milestones});['pdi-title','pdi-desc','pdi-ms'].forEach(id=>document.getElementById(id).value='');saveData();renderPDI(p);renderCards();showToast('PDI criado!');}
-function removePDI(pid,idx){if(!confirm('Excluir PDI?'))return;const p=people.find(x=>x.id===pid);p.pdis.splice(idx,1);saveData();renderPDI(p);renderCards();}
-function toggleMilestone(pid,pi,mi){const p=people.find(x=>x.id===pid);p.pdis[pi].milestones[mi].done=!p.pdis[pi].milestones[mi].done;saveData();renderPDI(p);renderCards();}
-function removeMilestone(pid,pi,mi){const p=people.find(x=>x.id===pid);p.pdis[pi].milestones.splice(mi,1);saveData();renderPDI(p);}
-function openMsModal(pid,pi){_msTarget={pid,pi};document.getElementById('ms-text').value='';document.getElementById('ms-date').value='';document.getElementById('ms-modal').classList.add('vis');}
+async function addPDI(){
+  if(!activeId)return;const title=document.getElementById('pdi-title').value.trim();if(!title)return;
+  const impact=document.getElementById('pdi-impact').value,deadline=document.getElementById('pdi-deadline').value||null,descricao=document.getElementById('pdi-desc').value.trim();
+  const msRaw=document.getElementById('pdi-ms').value.trim();
+  const msTexts=msRaw?msRaw.split('\n').filter(l=>l.trim()).map(t=>t.trim()):[];
+  try{
+    const r=await post('pdis',{person_id:activeId,title,descricao,impact,deadline});
+    const pdi=r[0];pdi._milestones=[];
+    if(msTexts.length){const msr=await post('milestones',msTexts.map(text=>({pdi_id:pdi.id,text,done:false})));pdi._milestones=msr||[];}
+    const p=people.find(x=>x.id===activeId);p._pdis.push(pdi);
+    ['pdi-title','pdi-desc','pdi-ms'].forEach(id=>document.getElementById(id).value='');
+    renderPDI(p);renderCards();showToast('PDI criado!');
+  }catch(e){showToast('Erro: '+e.message,true);}
+}
+async function removePDI(id,pid){
+  if(!confirm('Excluir PDI?'))return;
+  try{await del('pdis',`?id=eq.${id}`);const p=people.find(x=>x.id===pid);p._pdis=p._pdis.filter(x=>x.id!==id);renderPDI(p);renderCards();}catch(e){showToast('Erro',true);}
+}
+async function toggleMilestone(msId,pdiId,pid){
+  const p=people.find(x=>x.id===pid),pdi=p._pdis.find(x=>x.id===pdiId),ms=pdi._milestones.find(x=>x.id===msId);
+  const newDone=!ms.done;
+  try{await patch('milestones',{done:newDone},`?id=eq.${msId}`);ms.done=newDone;renderPDI(p);renderCards();}catch(e){showToast('Erro',true);}
+}
+async function removeMilestone(msId,pdiId,pid){
+  try{await del('milestones',`?id=eq.${msId}`);const p=people.find(x=>x.id===pid),pdi=p._pdis.find(x=>x.id===pdiId);pdi._milestones=pdi._milestones.filter(x=>x.id!==msId);renderPDI(p);}catch(e){showToast('Erro',true);}
+}
+function openMsModal(pid,pdiId){_msTarget={pid,pdi_id:pdiId};document.getElementById('ms-text').value='';document.getElementById('ms-date').value='';document.getElementById('ms-modal').classList.add('vis');}
 function closeMsModal(){document.getElementById('ms-modal').classList.remove('vis');}
-function saveMilestone(){const text=document.getElementById('ms-text').value.trim();if(!text)return;const date=document.getElementById('ms-date').value;const p=people.find(x=>x.id===_msTarget.pid);p.pdis[_msTarget.pi].milestones.push({text,done:false,date});saveData();renderPDI(p);closeMsModal();showToast('Milestone adicionado');}
+async function saveMilestone(){
+  const text=document.getElementById('ms-text').value.trim();if(!text)return;
+  const date=document.getElementById('ms-date').value||null;
+  try{const r=await post('milestones',{pdi_id:_msTarget.pdi_id,text,done:false,date});const p=people.find(x=>x.id===_msTarget.pid),pdi=p._pdis.find(x=>x.id===_msTarget.pdi_id);pdi._milestones.push(r[0]);renderPDI(p);closeMsModal();showToast('Milestone adicionado');}catch(e){showToast('Erro',true);}
+}
 
 function renderFeedback360(p){
-  if(!p.feedback360)p.feedback360=[];
-  const el=document.getElementById('dp-feedback360');
-  if(!p.feedback360.length){el.innerHTML='<div style="font-size:13px;color:var(--text3);margin-bottom:1rem">Nenhum feedback 360 registrado.</div>';return;}
-  el.innerHTML=[...p.feedback360].reverse().map((f,ri)=>{
-    const ft=FB_TYPE[f.type]||FB_TYPE.positivo;
-    const stars='★'.repeat(f.score||0)+'☆'.repeat(5-(f.score||0));
-    const realIdx=p.feedback360.length-1-ri;
-    return`<div class="fb-card"><div class="fb-meta"><span class="fb-from">${f.from}</span><span class="fb-type" style="background:${ft.bg};color:${ft.text}">${f.type}</span><span class="fb-date">${fmtDateFull(f.date)}</span><span class="fb-stars">${stars}</span><button onclick="removeFeedback360(${p.id},${realIdx})" style="margin-left:6px;background:none;border:none;cursor:pointer;color:var(--text3);font-size:13px"><i class="ti ti-trash"></i></button></div><div class="fb-text">${f.text}</div></div>`;
-  }).join('');
+  const el=document.getElementById('dp-feedback360'),fbs=[...(p._feedback360||[])].reverse();
+  if(!fbs.length){el.innerHTML='<div style="font-size:13px;color:var(--text3);margin-bottom:1rem">Nenhum feedback registrado.</div>';return;}
+  el.innerHTML=fbs.map(f=>{const ft=FB_TYPE[f.type]||FB_TYPE.positivo,stars='★'.repeat(f.score||0)+'☆'.repeat(5-(f.score||0));return`<div class="fb-card"><div class="fb-meta"><span class="fb-from">${f.from_name}</span><span class="fb-type" style="background:${ft.bg};color:${ft.text}">${f.type}</span><span class="fb-date">${fmtDateFull(f.date)}</span><span class="fb-stars">${stars}</span><button onclick="removeFeedback360(${f.id},${p.id})" style="margin-left:6px;background:none;border:none;cursor:pointer;color:var(--text3);font-size:13px"><i class="ti ti-trash"></i></button></div><div class="fb-text">${f.text}</div></div>`;}).join('');
 }
-function addFeedback360(){if(!activeId)return;const from=document.getElementById('fb-from').value.trim();if(!from)return;const type=document.getElementById('fb-type').value,score=parseInt(document.getElementById('fb-score').value)||4,date=document.getElementById('fb-date').value||today(),text=document.getElementById('fb-text').value.trim()||'(sem conteúdo)';const p=people.find(x=>x.id===activeId);p.feedback360.push({from,type,score,date,text});['fb-from','fb-text'].forEach(id=>document.getElementById(id).value='');document.getElementById('fb-score').value=4;saveData();renderFeedback360(p);showToast('Feedback salvo');}
-function removeFeedback360(pid,idx){if(!confirm('Excluir?'))return;const p=people.find(x=>x.id===pid);p.feedback360.splice(idx,1);saveData();renderFeedback360(p);}
+async function addFeedback360(){
+  if(!activeId)return;const from_name=document.getElementById('fb-from').value.trim();if(!from_name)return;
+  const type=document.getElementById('fb-type').value,score=parseInt(document.getElementById('fb-score').value)||4,date=document.getElementById('fb-date').value||today(),text=document.getElementById('fb-text').value.trim()||'(sem conteúdo)';
+  try{const r=await post('feedback360',{person_id:activeId,from_name,type,score,date,text});const p=people.find(x=>x.id===activeId);p._feedback360.push(r[0]);['fb-from','fb-text'].forEach(id=>document.getElementById(id).value='');document.getElementById('fb-score').value=4;renderFeedback360(p);showToast('Feedback salvo');}catch(e){showToast('Erro',true);}
+}
+async function removeFeedback360(id,pid){
+  if(!confirm('Excluir?'))return;
+  try{await del('feedback360',`?id=eq.${id}`);const p=people.find(x=>x.id===pid);p._feedback360=p._feedback360.filter(x=>x.id!==id);renderFeedback360(p);}catch(e){showToast('Erro',true);}
+}
 
 function renderCargo(p){
-  if(!p.cargoHistorico)p.cargoHistorico=[];
-  const el=document.getElementById('dp-cargo');
-  if(!p.cargoHistorico.length){el.innerHTML='<div style="font-size:13px;color:var(--text3);margin-bottom:1rem">Nenhum histórico registrado.</div>';return;}
-  const sorted=[...p.cargoHistorico].sort((a,b)=>b.date.localeCompare(a.date));
-  el.innerHTML=sorted.map((c,i)=>`<div class="cargo-item"><div class="cargo-dot ${i===0?'current':''}"><i class="ti ${i===0?'ti-user-check':'ti-user'}" style="font-size:11px"></i></div><div class="cargo-body"><div class="cargo-title">${c.title}${i===0?' <span style="font-size:11px;color:var(--blue-text);background:var(--blue-bg);padding:2px 7px;border-radius:20px;margin-left:6px">atual</span>':''}</div><div class="cargo-date">${fmtDateFull(c.date)}</div>${c.note?`<div class="cargo-note">${c.note}</div>`:''}</div><button onclick="removeCargo(${p.id},${p.cargoHistorico.findIndex(x=>x.title===c.title&&x.date===c.date)})" style="background:none;border:none;cursor:pointer;color:var(--text3);font-size:13px;flex-shrink:0"><i class="ti ti-trash"></i></button></div>`).join('');
+  const el=document.getElementById('dp-cargo'),cargo=[...(p._cargo||[])].sort((a,b)=>b.date.localeCompare(a.date));
+  if(!cargo.length){el.innerHTML='<div style="font-size:13px;color:var(--text3);margin-bottom:1rem">Nenhum histórico.</div>';return;}
+  el.innerHTML=cargo.map((c,i)=>`<div class="cargo-item"><div class="cargo-dot ${i===0?'current':''}"><i class="ti ${i===0?'ti-user-check':'ti-user'}" style="font-size:11px"></i></div><div class="cargo-body"><div class="cargo-title">${c.title}${i===0?' <span style="font-size:11px;color:var(--blue-text);background:var(--blue-bg);padding:2px 7px;border-radius:20px;margin-left:6px">atual</span>':''}</div><div class="cargo-date">${fmtDateFull(c.date)}</div>${c.note?`<div class="cargo-note">${c.note}</div>`:''}</div><button onclick="removeCargo(${c.id},${p.id})" style="background:none;border:none;cursor:pointer;color:var(--text3);font-size:13px;flex-shrink:0"><i class="ti ti-trash"></i></button></div>`).join('');
 }
-function addCargo(){if(!activeId)return;const title=document.getElementById('cargo-title').value.trim();if(!title)return;const date=document.getElementById('cargo-date').value||today(),note=document.getElementById('cargo-note').value.trim();const p=people.find(x=>x.id===activeId);p.cargoHistorico.push({title,date,note});['cargo-title','cargo-note'].forEach(id=>document.getElementById(id).value='');saveData();renderCargo(p);showToast('Cargo registrado');}
-function removeCargo(pid,idx){const p=people.find(x=>x.id===pid);p.cargoHistorico.splice(idx,1);saveData();renderCargo(p);}
+async function addCargo(){
+  if(!activeId)return;const title=document.getElementById('cargo-title').value.trim();if(!title)return;
+  const date=document.getElementById('cargo-date').value||today(),note=document.getElementById('cargo-note').value.trim();
+  try{const r=await post('cargo_historico',{person_id:activeId,title,date,note});const p=people.find(x=>x.id===activeId);p._cargo.push(r[0]);['cargo-title','cargo-note'].forEach(id=>document.getElementById(id).value='');renderCargo(p);showToast('Cargo registrado');}catch(e){showToast('Erro',true);}
+}
+async function removeCargo(id,pid){
+  try{await del('cargo_historico',`?id=eq.${id}`);const p=people.find(x=>x.id===pid);p._cargo=p._cargo.filter(x=>x.id!==id);renderCargo(p);}catch(e){showToast('Erro',true);}
+}
 
-/* TABS */
 function switchTab(btn,tabId){
-  document.querySelectorAll('.tab').forEach(b=>b.classList.remove('on'));
-  btn.classList.add('on');
-  document.querySelectorAll('.tp').forEach(t=>t.classList.remove('on'));
-  document.getElementById(tabId).classList.add('on');
+  document.querySelectorAll('.tab').forEach(b=>b.classList.remove('on'));btn.classList.add('on');
+  document.querySelectorAll('.tp').forEach(t=>t.classList.remove('on'));document.getElementById(tabId).classList.add('on');
   if(tabId==='t-comp'&&activeId){const p=people.find(x=>x.id===activeId);setTimeout(()=>renderRadar(p),60);}
   if(tabId==='t-evo'&&activeId){const p=people.find(x=>x.id===activeId);setTimeout(()=>renderEvo(p),60);}
 }
 function switchTabTo(tabId){
   const ids=['t-hist','t-evo','t-comp','t-bottlenecks','t-comments','t-perspectiva','t-atividades','t-pdi','t-feedback360','t-cargo'];
   document.querySelectorAll('.tab').forEach((b,i)=>b.classList.toggle('on',ids[i]===tabId));
-  document.querySelectorAll('.tp').forEach(t=>t.classList.remove('on'));
-  document.getElementById(tabId).classList.add('on');
+  document.querySelectorAll('.tp').forEach(t=>t.classList.remove('on'));document.getElementById(tabId).classList.add('on');
 }
 
-/* CHARTS */
 function renderRadar(p){
-  const ctx=document.getElementById('radar-chart').getContext('2d'),c=getColor(p.colorIdx||0);
+  const ctx=document.getElementById('radar-chart').getContext('2d'),c=getColor(p.color_idx||0),comps=p._comps||[];
   if(radarChart)radarChart.destroy();
-  radarChart=new Chart(ctx,{type:'radar',data:{labels:p.competencies.map(x=>x.label),datasets:[{label:p.name,data:p.competencies.map(x=>x.score),borderColor:c.bar,backgroundColor:c.bar+'28',pointBackgroundColor:c.bar,borderWidth:2,pointRadius:4}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{r:{min:0,max:10,ticks:{stepSize:2,backdropColor:'transparent',color:'#9ca3af',font:{size:11}},grid:{color:'rgba(0,0,0,0.08)'},angleLines:{color:'rgba(0,0,0,0.08)'},pointLabels:{font:{size:12},color:'#6b7280'}}}}});
+  radarChart=new Chart(ctx,{type:'radar',data:{labels:comps.map(x=>x.label),datasets:[{label:p.name,data:comps.map(x=>x.score),borderColor:c.bar,backgroundColor:c.bar+'28',pointBackgroundColor:c.bar,borderWidth:2,pointRadius:4}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{r:{min:0,max:10,ticks:{stepSize:2,backdropColor:'transparent',color:'#9ca3af',font:{size:11}},grid:{color:'rgba(0,0,0,0.08)'},angleLines:{color:'rgba(0,0,0,0.08)'},pointLabels:{font:{size:12},color:'#6b7280'}}}}});
 }
 function renderEvo(p){
-  const ctx=document.getElementById('evo-chart').getContext('2d'),c=getColor(p.colorIdx||0);
+  const ctx=document.getElementById('evo-chart').getContext('2d'),c=getColor(p.color_idx||0);
   if(evoChart)evoChart.destroy();
-  const sorted=[...p.sessions].sort((a,b)=>a.date.localeCompare(b.date));
+  const sorted=[...(p._sessions||[])].sort((a,b)=>a.date.localeCompare(b.date));
   if(!sorted.length){document.getElementById('evo-legend').innerHTML='<span style="color:var(--text3);font-size:12px">Nenhuma sessão.</span>';return;}
   document.getElementById('evo-legend').innerHTML=`<span><span class="legend-dot" style="background:${c.bar}"></span>Nota por 1:1</span>`;
   evoChart=new Chart(ctx,{type:'line',data:{labels:sorted.map(s=>fmtDateFull(s.date)),datasets:[{label:'Nota',data:sorted.map(s=>s.score),borderColor:c.bar,backgroundColor:c.bar+'18',pointBackgroundColor:c.bar,pointRadius:5,pointHoverRadius:7,borderWidth:2.5,fill:true,tension:0.3}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:ctx=>`Nota: ${ctx.parsed.y}`}}},scales:{y:{min:0,max:10,ticks:{stepSize:2,color:'#9ca3af',font:{size:11}},grid:{color:'rgba(0,0,0,0.06)'}},x:{ticks:{color:'#9ca3af',font:{size:11},autoSkip:false,maxRotation:30},grid:{color:'rgba(0,0,0,0.06)'}}}}});
 }
 
-/* COMPARE */
 function openCompare(){
-  if(people.length<2){showToast('Precisa de ao menos 2 liderados para comparar.');return;}
+  if(people.length<2){showToast('Precisa de ao menos 2 liderados.');return;}
   const sel=people.map(p=>`<option value="${p.id}">${p.name}</option>`).join('');
-  document.getElementById('cmp-a').innerHTML=sel;
-  document.getElementById('cmp-b').innerHTML=sel;
+  document.getElementById('cmp-a').innerHTML=sel;document.getElementById('cmp-b').innerHTML=sel;
   if(people.length>=2)document.getElementById('cmp-b').value=people[1].id;
-  document.getElementById('compare-modal').classList.add('vis');
-  setTimeout(renderCompare,100);
+  document.getElementById('compare-modal').classList.add('vis');setTimeout(renderCompare,100);
 }
 function closeCompare(){document.getElementById('compare-modal').classList.remove('vis');if(compareChart){compareChart.destroy();compareChart=null;}}
 function renderCompare(){
-  const idA=parseInt(document.getElementById('cmp-a').value),idB=parseInt(document.getElementById('cmp-b').value);
-  const pA=people.find(x=>x.id===idA),pB=people.find(x=>x.id===idB);
+  const pA=people.find(x=>x.id===parseInt(document.getElementById('cmp-a').value));
+  const pB=people.find(x=>x.id===parseInt(document.getElementById('cmp-b').value));
   if(!pA||!pB)return;
   const ctx=document.getElementById('compare-chart').getContext('2d');
-  const cA=getColor(pA.colorIdx||0),cB=getColor(pB.colorIdx||0);
+  const cA=getColor(pA.color_idx||0),cB=getColor(pB.color_idx||0);
   if(compareChart)compareChart.destroy();
   compareChart=new Chart(ctx,{type:'radar',data:{labels:COMP_NAMES,datasets:[
-    {label:pA.name,data:pA.competencies.map(x=>x.score),borderColor:cA.bar,backgroundColor:cA.bar+'22',pointBackgroundColor:cA.bar,borderWidth:2,pointRadius:4},
-    {label:pB.name,data:pB.competencies.map(x=>x.score),borderColor:cB.bar,backgroundColor:cB.bar+'22',pointBackgroundColor:cB.bar,borderWidth:2,pointRadius:4,borderDash:[5,3]},
+    {label:pA.name,data:pA._comps.map(x=>x.score),borderColor:cA.bar,backgroundColor:cA.bar+'22',pointBackgroundColor:cA.bar,borderWidth:2,pointRadius:4},
+    {label:pB.name,data:pB._comps.map(x=>x.score),borderColor:cB.bar,backgroundColor:cB.bar+'22',pointBackgroundColor:cB.bar,borderWidth:2,pointRadius:4,borderDash:[5,3]},
   ]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{r:{min:0,max:10,ticks:{stepSize:2,backdropColor:'transparent',color:'#9ca3af',font:{size:11}},grid:{color:'rgba(0,0,0,0.08)'},angleLines:{color:'rgba(0,0,0,0.08)'},pointLabels:{font:{size:12},color:'#6b7280'}}}}});
-  const lsA=pA.sessions.length?pA.sessions.reduce((a,b)=>a.date>b.date?a:b).score:'—';
-  const lsB=pB.sessions.length?pB.sessions.reduce((a,b)=>a.date>b.date?a:b).score:'—';
-  const tA=calcTrend(pA),tB=calcTrend(pB);
-  document.getElementById('compare-stats').innerHTML=`
-    <div style="background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);padding:12px">
-      <div style="display:flex;align-items:center;gap:6px;margin-bottom:8px"><span style="width:10px;height:10px;background:${cA.bar};border-radius:2px;display:inline-block"></span><strong style="font-size:13px">${pA.name}</strong></div>
-      <div style="font-size:12px;color:var(--text2)">Última nota: <strong>${lsA}</strong><br>Tendência: <strong>${tA===null?'—':tA>0?'↑ +'+tA:tA<0?'↓ '+tA:'→ estável'}</strong><br>1:1s: <strong>${pA.sessions.length}</strong><br>PDIs: <strong>${(pA.pdis||[]).length}</strong></div>
-    </div>
-    <div style="background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);padding:12px">
-      <div style="display:flex;align-items:center;gap:6px;margin-bottom:8px"><span style="width:10px;height:10px;background:${cB.bar};border-radius:2px;display:inline-block;border:2px dashed ${cB.bar};background:transparent"></span><strong style="font-size:13px">${pB.name}</strong></div>
-      <div style="font-size:12px;color:var(--text2)">Última nota: <strong>${lsB}</strong><br>Tendência: <strong>${tB===null?'—':tB>0?'↑ +'+tB:tB<0?'↓ '+tB:'→ estável'}</strong><br>1:1s: <strong>${pB.sessions.length}</strong><br>PDIs: <strong>${(pB.pdis||[]).length}</strong></div>
-    </div>`;
+  const lsA=lastSession(pA),lsB=lastSession(pB),tA=calcTrend(pA),tB=calcTrend(pB);
+  document.getElementById('compare-stats').innerHTML=`<div style="background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);padding:12px"><div style="display:flex;align-items:center;gap:6px;margin-bottom:8px"><span style="width:10px;height:10px;background:${cA.bar};border-radius:2px;display:inline-block"></span><strong style="font-size:13px">${pA.name}</strong></div><div style="font-size:12px;color:var(--text2)">Última nota: <strong>${lsA?lsA.score:'—'}</strong><br>Tendência: <strong>${tA===null?'—':tA>0?'↑ +'+tA:tA<0?'↓ '+tA:'→'}</strong><br>1:1s: <strong>${(pA._sessions||[]).length}</strong></div></div><div style="background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);padding:12px"><div style="display:flex;align-items:center;gap:6px;margin-bottom:8px"><span style="width:10px;height:10px;border:2px dashed ${cB.bar};border-radius:2px;display:inline-block"></span><strong style="font-size:13px">${pB.name}</strong></div><div style="font-size:12px;color:var(--text2)">Última nota: <strong>${lsB?lsB.score:'—'}</strong><br>Tendência: <strong>${tB===null?'—':tB>0?'↑ +'+tB:tB<0?'↓ '+tB:'→'}</strong><br>1:1s: <strong>${(pB._sessions||[]).length}</strong></div></div>`;
 }
 
-/* 1:1 */
 function openNew1on1(target){
   const form=document.getElementById('form-1on1');form.classList.add('vis');
   document.getElementById('f-person').innerHTML=people.map(p=>`<option value="${p.id}"${(target==='active'&&activeId===p.id)?' selected':''}>${p.name}</option>`).join('');
@@ -884,82 +771,77 @@ function openNew1on1(target){
   form.scrollIntoView({behavior:'smooth',block:'nearest'});
 }
 function closeForm1on1(){document.getElementById('form-1on1').classList.remove('vis');}
-function save1on1(){
+async function save1on1(){
   const pid=parseInt(document.getElementById('f-person').value);
   const date=document.getElementById('f-date').value,score=parseFloat(document.getElementById('f-score').value)||7;
   const notes=document.getElementById('f-notes').value.trim()||'(sem anotações)',tag=document.getElementById('f-tag').value;
-  const p=people.find(x=>x.id===pid);if(!p)return;
-  p.sessions.push({date,score,notes,tag});p.sessions.sort((a,b)=>a.date.localeCompare(b.date));
-  saveData();closeForm1on1();renderCards();
-  if(activeId===pid){renderHistory(p);if(document.getElementById('t-evo').classList.contains('on'))renderEvo(p);}
-  showToast('1:1 salva!');
+  try{const r=await post('sessions',{person_id:pid,date,score,notes,tag});const p=people.find(x=>x.id===pid);p._sessions.push(r[0]);closeForm1on1();renderCards();if(activeId===pid){renderHistory(p);if(document.getElementById('t-evo').classList.contains('on'))renderEvo(p);}showToast('1:1 salva!');}catch(e){showToast('Erro: '+e.message,true);}
 }
-function deleteSession(pid,date,idx){
+async function deleteSession(id,pid){
   if(!confirm('Excluir esta 1:1?'))return;
-  const p=people.find(x=>x.id===pid);
-  const sorted=[...p.sessions].sort((a,b)=>b.date.localeCompare(a.date));
-  const s=sorted[idx];const ri=p.sessions.findIndex(x=>x.date===s.date&&x.notes===s.notes);
-  if(ri>-1)p.sessions.splice(ri,1);
-  saveData();renderHistory(p);renderCards();showToast('1:1 excluída');
+  try{await del('sessions',`?id=eq.${id}`);const p=people.find(x=>x.id===pid);p._sessions=p._sessions.filter(x=>x.id!==id);renderHistory(p);renderCards();showToast('1:1 excluída');}catch(e){showToast('Erro',true);}
 }
 
-/* PESSOA */
-const COMP_NAMES2=['Entrega','Comunicação','Autonomia','Colaboração','Inovação'];
-function buildCompInputs(vals){document.getElementById('pm-comps').innerHTML=COMP_NAMES2.map((name,i)=>`<div class="comp-edit-row" style="margin-bottom:8px"><span class="comp-edit-label">${name}</span><input type="range" min="1" max="10" step="1" value="${vals[i]||5}" class="comp-edit-bar" oninput="this.nextElementSibling.textContent=this.value"/><span class="comp-edit-score">${vals[i]||5}</span></div>`).join('');}
+function buildCompInputs(vals){document.getElementById('pm-comps').innerHTML=COMP_NAMES.map((name,i)=>`<div class="comp-edit-row" style="margin-bottom:8px"><span class="comp-edit-label">${name}</span><input type="range" min="1" max="10" step="1" value="${vals[i]||5}" class="comp-edit-bar" oninput="this.nextElementSibling.textContent=this.value"/><span class="comp-edit-score">${vals[i]||5}</span></div>`).join('');}
 function openAddPerson(){editingPersonId=null;document.getElementById('modal-title').textContent='Adicionar liderado';['pm-name','pm-role','pm-area'].forEach(id=>document.getElementById(id).value='');document.getElementById('pm-next').value='';buildCompInputs([5,5,5,5,5]);document.getElementById('person-modal').classList.add('vis');}
-function openEditPerson(){if(!activeId)return;const p=people.find(x=>x.id===activeId);editingPersonId=p.id;document.getElementById('modal-title').textContent='Editar liderado';document.getElementById('pm-name').value=p.name;document.getElementById('pm-role').value=p.role;document.getElementById('pm-area').value=p.area||'';document.getElementById('pm-next').value=p.next1on1||'';buildCompInputs(p.competencies.map(c=>c.score));document.getElementById('person-modal').classList.add('vis');}
+function openEditPerson(){if(!activeId)return;const p=people.find(x=>x.id===activeId);editingPersonId=p.id;document.getElementById('modal-title').textContent='Editar liderado';document.getElementById('pm-name').value=p.name;document.getElementById('pm-role').value=p.role||'';document.getElementById('pm-area').value=p.area||'';document.getElementById('pm-next').value=p.next1on1?p.next1on1.split('T')[0]:'';buildCompInputs((p._comps||[]).map(c=>c.score));document.getElementById('person-modal').classList.add('vis');}
 function closePersonModal(){document.getElementById('person-modal').classList.remove('vis');}
-function savePerson(){
-  const name=document.getElementById('pm-name').value.trim(),role=document.getElementById('pm-role').value.trim(),area=document.getElementById('pm-area').value.trim(),next=document.getElementById('pm-next').value;
+async function savePerson(){
+  const name=document.getElementById('pm-name').value.trim(),role=document.getElementById('pm-role').value.trim(),area=document.getElementById('pm-area').value.trim(),next1on1=document.getElementById('pm-next').value||null;
   if(!name){alert('Digite o nome.');return;}
   const sliders=document.querySelectorAll('#pm-comps input[type=range]');
-  const comps=COMP_NAMES2.map((label,i)=>({label,score:parseInt(sliders[i].value)||5}));
-  if(editingPersonId){
-    const p=people.find(x=>x.id===editingPersonId);p.name=name;p.role=role;p.area=area;p.next1on1=next;p.competencies=comps;
-    if(activeId===p.id){document.getElementById('dp-name').textContent=p.name;document.getElementById('dp-role').textContent=p.role+(p.area?' · '+p.area:'');renderCompDetail(p);}
-    showToast('Liderado atualizado!');
-  }else{
-    const newId=people.length?Math.max(...people.map(x=>x.id))+1:1;
-    people.push({id:newId,name,role,area,colorIdx:newId-1,next1on1:next,competencies:comps,bottlenecks:[],sessions:[],comments:[],perspectiva:[],atividades:[],pdis:[],feedback360:[],cargoHistorico:[{title:role,date:today(),note:'Entrada registrada'}]});
-    showToast('Liderado adicionado!');
-  }
-  saveData();closePersonModal();renderCards();
+  const compVals=COMP_NAMES.map((label,i)=>({label,score:parseInt(sliders[i].value)||5}));
+  try{
+    if(editingPersonId){
+      await patch('people',{name,role,area,next1on1},`?id=eq.${editingPersonId}`);
+      const p=people.find(x=>x.id===editingPersonId);p.name=name;p.role=role;p.area=area;p.next1on1=next1on1;
+      for(let i=0;i<p._comps.length;i++){await patch('competencies',{score:compVals[i].score},`?id=eq.${p._comps[i].id}`);p._comps[i].score=compVals[i].score;}
+      if(activeId===p.id){document.getElementById('dp-name').textContent=p.name;document.getElementById('dp-role').textContent=(p.role||'')+(p.area?' · '+p.area:'');renderCompDetail(p);}
+      showToast('Liderado atualizado!');
+    }else{
+      const colorIdx=people.length%PALETTE.length;
+      const r=await post('people',{name,role,area,color_idx:colorIdx,next1on1});
+      const newP=r[0];
+      const cr=await post('competencies',compVals.map(c=>({person_id:newP.id,label:c.label,score:c.score})));
+      newP._comps=cr||[];newP._sessions=[];newP._bottlenecks=[];newP._comments=[];newP._perspectiva=[];newP._atividades=[];newP._pdis=[];newP._feedback360=[];newP._cargo=[];
+      if(next1on1){await post('cargo_historico',{person_id:newP.id,title:role||'Cargo inicial',date:today(),note:'Entrada registrada'});newP._cargo=[{title:role||'Cargo inicial',date:today(),note:'Entrada registrada'}];}
+      people.push(newP);showToast('Liderado adicionado!');
+    }
+    saveData_noop();closePersonModal();renderCards();
+  }catch(e){showToast('Erro: '+e.message,true);}
 }
+function saveData_noop(){}
 
-/* PDF */
 function pdfHeader(doc,title){doc.setFont('helvetica','bold');doc.setFontSize(16);doc.setTextColor(26,26,24);doc.text(title,14,18);doc.setFont('helvetica','normal');doc.setFontSize(9);doc.setTextColor(150,150,145);doc.text('Exportado em '+new Date().toLocaleDateString('pt-BR'),14,25);return 35;}
 function exportAllPDF(){
   const{jsPDF}=window.jspdf;const doc=new jsPDF();let y=pdfHeader(doc,'Dashboard de evolucao dos liderados');
   people.forEach(p=>{
     if(y>255){doc.addPage();y=20;}
-    doc.setFont('helvetica','bold');doc.setFontSize(12);doc.setTextColor(26,26,24);doc.text(p.name+' — '+p.role,14,y);y+=6;
+    doc.setFont('helvetica','bold');doc.setFontSize(12);doc.setTextColor(26,26,24);doc.text(p.name+' — '+(p.role||''),14,y);y+=6;
     doc.setFont('helvetica','normal');doc.setFontSize(10);doc.setTextColor(80,80,80);
-    const ls=p.sessions.length?p.sessions.reduce((a,b)=>a.date>b.date?a:b).score:'—';
-    doc.text('Ultima nota: '+ls+'   |   '+p.sessions.length+' 1:1s   |   '+(p.pdis||[]).length+' PDIs',14,y);y+=5;
-    doc.text('Competencias: '+p.competencies.map(c=>c.label+' '+c.score).join(', '),14,y,{maxWidth:180});y+=6;
-    if(p.bottlenecks.length){doc.setTextColor(160,50,50);doc.text('Gargalos: '+p.bottlenecks.join(' | '),14,y,{maxWidth:180});y+=Math.ceil(p.bottlenecks.join(' | ').length/90)*5;}
-    const od=isOverdue(p);if(od){doc.setTextColor(160,120,0);doc.text('ATENCAO: sem 1:1 ha '+daysSince(lastSessionDate(p))+' dias',14,y);y+=5;}
+    const ls=lastSession(p);doc.text('Ultima nota: '+(ls?ls.score:'—')+'   |   '+(p._sessions||[]).length+' 1:1s',14,y);y+=5;
+    doc.text('Competencias: '+(p._comps||[]).map(c=>c.label+' '+c.score).join(', '),14,y,{maxWidth:180});y+=6;
+    if((p._bottlenecks||[]).length){doc.setTextColor(160,50,50);doc.text('Gargalos: '+p._bottlenecks.map(x=>x.text).join(' | '),14,y,{maxWidth:180});y+=6;}
+    if(isOverdue(p)){doc.setTextColor(160,120,0);doc.text('ATENCAO: sem 1:1 ha '+daysSince((ls||{}).date)+' dias',14,y);y+=5;}
     doc.setTextColor(180,180,175);doc.line(14,y+2,196,y+2);y+=10;
   });
   doc.save('liderados-'+new Date().toLocaleDateString('pt-BR').replace(/\//g,'-')+'.pdf');showToast('PDF gerado!');
 }
 function exportPersonPDF(){
-  if(!activeId)return;
-  const p=people.find(x=>x.id===activeId);
+  if(!activeId)return;const p=people.find(x=>x.id===activeId);
   const{jsPDF}=window.jspdf;const doc=new jsPDF();let y=pdfHeader(doc,p.name);
-  doc.setFont('helvetica','normal');doc.setFontSize(11);doc.setTextColor(100,100,100);doc.text(p.role+(p.area?' · '+p.area:''),14,y);y+=12;
+  doc.setFont('helvetica','normal');doc.setFontSize(11);doc.setTextColor(100,100,100);doc.text((p.role||'')+(p.area?' · '+p.area:''),14,y);y+=12;
   doc.setFont('helvetica','bold');doc.setFontSize(11);doc.setTextColor(26,26,24);doc.text('Competencias',14,y);y+=6;
-  doc.setFont('helvetica','normal');doc.setFontSize(10);doc.setTextColor(80,80,80);p.competencies.forEach(c=>{doc.text(c.label+': '+c.score+'/10',14,y);y+=5;});y+=4;
-  if(p.bottlenecks.length){doc.setFont('helvetica','bold');doc.setFontSize(11);doc.setTextColor(26,26,24);doc.text('Gargalos',14,y);y+=6;p.bottlenecks.forEach(b=>{if(y>265){doc.addPage();y=20;}doc.setFont('helvetica','normal');doc.setFontSize(10);doc.setTextColor(160,50,50);doc.text('• '+b,14,y,{maxWidth:180});y+=Math.ceil((b.length+2)/88)*5+1;});y+=3;}
-  if((p.pdis||[]).length){if(y>240){doc.addPage();y=20;}doc.setFont('helvetica','bold');doc.setFontSize(11);doc.setTextColor(26,26,24);doc.text('PDIs',14,y);y+=6;p.pdis.forEach(pdi=>{if(y>255){doc.addPage();y=20;}doc.setFont('helvetica','bold');doc.setFontSize(10);doc.setTextColor(50,50,50);doc.text(pdi.title+' ['+pdi.impact+']',14,y);y+=5;pdi.milestones.forEach(ms=>{if(y>265){doc.addPage();y=20;}doc.setFont('helvetica','normal');doc.setFontSize(9);doc.setTextColor(ms.done?120:60,ms.done?120:60,ms.done?120:60);doc.text((ms.done?'[x] ':'[ ] ')+ms.text,18,y);y+=5;});y+=3;});}
-  if((p.feedback360||[]).length){if(y>240){doc.addPage();y=20;}doc.setFont('helvetica','bold');doc.setFontSize(11);doc.setTextColor(26,26,24);doc.text('Feedback 360',14,y);y+=6;p.feedback360.forEach(f=>{if(y>260){doc.addPage();y=20;}doc.setFont('helvetica','bold');doc.setFontSize(10);doc.setTextColor(50,50,50);doc.text(f.from+' ['+f.type+'] '+fmtDateFull(f.date),14,y);y+=5;doc.setFont('helvetica','normal');doc.setTextColor(80,80,80);doc.text(f.text,14,y,{maxWidth:182});y+=Math.ceil(f.text.length/80)*5+3;});}
+  (p._comps||[]).forEach(c=>{doc.setFont('helvetica','normal');doc.setFontSize(10);doc.setTextColor(80,80,80);doc.text(c.label+': '+c.score+'/10',14,y);y+=5;});y+=4;
+  if((p._bottlenecks||[]).length){doc.setFont('helvetica','bold');doc.setFontSize(11);doc.setTextColor(26,26,24);doc.text('Gargalos',14,y);y+=6;p._bottlenecks.forEach(b=>{if(y>265){doc.addPage();y=20;}doc.setFont('helvetica','normal');doc.setFontSize(10);doc.setTextColor(160,50,50);doc.text('• '+b.text,14,y,{maxWidth:180});y+=6;});y+=3;}
+  if((p._pdis||[]).length){if(y>240){doc.addPage();y=20;}doc.setFont('helvetica','bold');doc.setFontSize(11);doc.setTextColor(26,26,24);doc.text('PDIs',14,y);y+=6;p._pdis.forEach(pdi=>{if(y>255){doc.addPage();y=20;}doc.setFont('helvetica','bold');doc.setFontSize(10);doc.setTextColor(50,50,50);doc.text(pdi.title+' ['+pdi.impact+']',14,y);y+=5;(pdi._milestones||[]).forEach(ms=>{if(y>265){doc.addPage();y=20;}doc.setFont('helvetica','normal');doc.setFontSize(9);doc.setTextColor(ms.done?120:60,ms.done?120:60,ms.done?120:60);doc.text((ms.done?'[x] ':'[ ] ')+ms.text,18,y);y+=5;});y+=3;});}
   if(y>240){doc.addPage();y=20;}
-  doc.setFont('helvetica','bold');doc.setFontSize(11);doc.setTextColor(26,26,24);doc.text('Historico de 1:1s ('+p.sessions.length+')',14,y);y+=6;
-  [...p.sessions].sort((a,b)=>b.date.localeCompare(a.date)).forEach(s=>{if(y>265){doc.addPage();y=20;}doc.setFont('helvetica','bold');doc.setFontSize(10);doc.setTextColor(50,50,50);doc.text(fmtDateFull(s.date)+' — nota: '+s.score+'/10  ['+s.tag+']',14,y);y+=5;doc.setFont('helvetica','normal');doc.setTextColor(80,80,80);doc.text(s.notes,14,y,{maxWidth:182});y+=Math.ceil(s.notes.length/80)*5+4;});
+  doc.setFont('helvetica','bold');doc.setFontSize(11);doc.setTextColor(26,26,24);doc.text('Historico de 1:1s ('+(p._sessions||[]).length+')',14,y);y+=6;
+  [...(p._sessions||[])].sort((a,b)=>b.date.localeCompare(a.date)).forEach(s=>{if(y>265){doc.addPage();y=20;}doc.setFont('helvetica','bold');doc.setFontSize(10);doc.setTextColor(50,50,50);doc.text(fmtDateFull(s.date)+' — nota: '+s.score+'/10  ['+s.tag+']',14,y);y+=5;doc.setFont('helvetica','normal');doc.setTextColor(80,80,80);doc.text(s.notes||'',14,y,{maxWidth:182});y+=Math.ceil((s.notes||'').length/80)*5+4;});
   doc.save(p.name.toLowerCase().replace(/\s+/g,'-')+'-liderado.pdf');showToast('PDF gerado!');
 }
 
-loadData();renderCards();
+loadAll();
 </script>
 </body>
 </html>
